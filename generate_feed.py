@@ -31,6 +31,9 @@ def generate_rss():
     fg.podcast.itunes_category('Technology', 'Podcasting')
     fg.podcast.itunes_explicit('no')
 
+    fg.podcast.itunes_owner(email='jameshood118@gmail.com', name='James Hood')
+    fg.podcast.itunes_image('https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png')
+
     # Read all markdown files in the episodes folder
     episodes_dir = 'episodes'
     if not os.path.exists(episodes_dir):
