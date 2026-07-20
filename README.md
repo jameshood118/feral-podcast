@@ -37,3 +37,6 @@ Escape the SaaS rent trap without learning to code. Saiph House offers a **White
 You pay once for the architecture, and you never pay a monthly podcasting SaaS fee again.
 
 👉 **[Ready to claim your infrastructure? Let's build your pipeline.](mailto:jameshood118@gmail.com)**
+
+<!-- FEEDS-START -->
+<!-- FEEDS-END -->

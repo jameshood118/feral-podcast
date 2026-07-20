@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'outputs/show/**/rss.xml'
-  workflow_dispatch: # Allows manual trigger from the GitHub dashboard
+      - 'inputs/show/**'
+  workflow_dispatch:
 
 jobs:
   build_and_deploy:
@@ -29,9 +29,9 @@ jobs:
       - name: Execute Python Engine
         run: python generate_feed.py
 
-      - name: Commit XML to Repository
+      - name: Commit XML + README to Repository
         run: |
           git config --global user.name "Sovereign-Automation-Bot"
           git config --global user.email "bot@saiphhouse.net"
-          git add outputs/show/**/rss.xml
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated RSS XML Update: Multi-Show Sync" && git push)
+          git add outputs/show/**/rss.xml README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated RSS + README Update: Multi-Show Sync" && git push)
