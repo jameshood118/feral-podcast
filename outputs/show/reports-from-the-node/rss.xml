@@ -1,5 +1,46 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Reports from the Node</title><link>https://jameshood118.github.io/feral-podcast/show/reports-from-the-node/</link><description>High-friction truths and systems architecture from Reports from the Node.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en</language><lastBuildDate>Mon, 20 Jul 2026 06:21:31 +0000</lastBuildDate><itunes:author>James Hood</itunes:author><itunes:category text="Technology"><itunes:category text="Podcasting"/></itunes:category><itunes:image href="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"/><itunes:explicit>no</itunes:explicit><itunes:owner><itunes:name>James Hood</itunes:name><itunes:email>jameshood118@gmail.com</itunes:email></itunes:owner><itunes:type>episodic</itunes:type><item><title>Episode 1: Escape the SaaS Rent Trap</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the per-seat SaaS pricing model and dismantle the SaaS rent trap efficiency trap. We explore how Baur Software's Tenure plan replaces expensive third-party tools with sovereign, open-source infrastructure.
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Reports from the Node</title><link>https://jameshood118.github.io/feral-podcast/show/reports-from-the-node/</link><description>High-friction truths and systems architecture from Reports from the Node.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en</language><lastBuildDate>Mon, 20 Jul 2026 08:36:14 +0000</lastBuildDate><itunes:author>James Hood</itunes:author><itunes:category text="Technology"><itunes:category text="Podcasting"/></itunes:category><itunes:image href="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"/><itunes:explicit>no</itunes:explicit><itunes:owner><itunes:name>James Hood</itunes:name><itunes:email>jameshood118@gmail.com</itunes:email></itunes:owner><itunes:type>episodic</itunes:type><item><title>Episode 3: Bare Metal Custody and Weaponized Whimsy</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of physical infrastructure control and dismantle the rent-seeking SaaS efficiency trap.
+
+## The Feral Telemetry (Timestamps)
+
+* **[00:00]** - Initialization and the Feral Boot Sequence
+* **[02:30]** - Deconstructing the Beige World Logic: The illusion of cloud ownership.
+* **[08:15]** - The GitHub Actions Paradigm Shift: Implementing CI/CD without gatekeepers.
+* **[12:45]** - System Audit and Motor Exit Points
+
+### Lexicon Markers Triggered
+
+* **[Bare Metal Custody]:** The absolute requirement that all software tools and diagnostic pipelines run on infrastructure fully controlled and decompilable by the Sovereign Pilot.
+* **[Weaponized Whimsy]:** An automated defense mechanism neutralizing hostile inputs by aggressively rewriting the request into an absurd, comical concept[cite: 10, 13].
+* **[Efficiency Trap]:** The corporate obsession with frictionless speed and profit that inevitably leads to the removal of vital manual verification and structural validation, causing systemic degradation, cognitive burnout, and long-term technical debt[cite: 10, 13].
+
+### Out-of-Band Verification (Resources)
+
+* [Saiph House Operations](https://www.linkedin.com/in/jameshood118)
+* [The Sovereign Pilot Substack](https://jameshood118.substack.com)
+
+---
+*End of Transmission.*</description><guid isPermaLink="false">f3a2b1c4-9d8e-4a7f-b6c5-8a9d1e2f3c4b</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Bare_metal_custody_and_weaponized_whimsy.m4a" length="18400000" type="audio/mpeg"/><pubDate>Mon, 20 Jul 2026 03:32:35 +0000</pubDate><itunes:duration>14:22</itunes:duration><itunes:season>1</itunes:season><itunes:episode>3</itunes:episode></item><item><title>Episode 2: Ditching Saas for Feral Podcast Pipelines</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of digital independence and dismantle the SaaS subscription model's efficiency trap.
+
+## The Feral Telemetry (Timestamps)
+
+* **[00:00]** - Initialization and the Feral Boot Sequence
+* **[02:15]** - Deconstructing the Beige World Logic: Paying rent to exist on someone else's server.
+* **[07:30]** - The GitHub Actions Paradigm Shift: Automation without tollbooths.
+* **[12:10]** - System Audit and Motor Exit Points
+
+### Lexicon Markers Triggered
+
+* **[Efficiency Trap]:** The corporate obsession with frictionless speed and profit that inevitably leads to the removal of vital manual verification and structural validation, causing systemic degradation, cognitive burnout, and long-term technical debt.
+* **[Bare Metal Custody]:** The absolute requirement that all software tools and diagnostic pipelines run on infrastructure fully controlled and decompilable by the Sovereign Pilot.
+
+### Out-of-Band Verification (Resources)
+
+* [Saiph House Operations](http://www.linkedin.com/in/jameshood118)
+* [The Sovereign Pilot Substack](https://jameshood118.substack.com)
+
+---
+*End of Transmission.*</description><guid isPermaLink="false">c18f1a18-5a4c-5f8e-b5c4-4b52c6f1a8c2</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Ditching_SaaS_for_Feral_Podcast_Pipelines.m4a" length="18400000" type="audio/mpeg"/><pubDate>Mon, 20 Jul 2026 03:26:33 +0000</pubDate><itunes:duration>14:22</itunes:duration><itunes:season>1</itunes:season><itunes:episode>2</itunes:episode></item><item><title>Episode 1: Escape the SaaS Rent Trap</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the per-seat SaaS pricing model and dismantle the SaaS rent trap efficiency trap. We explore how Baur Software's Tenure plan replaces expensive third-party tools with sovereign, open-source infrastructure.
 
 ## The Feral Telemetry (Timestamps)
 
