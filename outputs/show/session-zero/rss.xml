@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>The Sovereign Pilot</title><link>https://jameshood118.github.io/feral-podcast</link><description>High-friction truths and systems architecture from the analog wasteland.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en</language><lastBuildDate>Wed, 15 Jul 2026 13:42:24 +0000</lastBuildDate><itunes:author>James Hood</itunes:author><itunes:category text="Technology"><itunes:category text="Podcasting"/></itunes:category><itunes:explicit>no</itunes:explicit><item><title>Episode 1: Escape the SaaS Rent Trap</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the per-seat SaaS pricing model and dismantle the SaaS rent trap efficiency trap. We explore how Baur Software's Tenure plan replaces expensive third-party tools with sovereign, open-source infrastructure.
+
+## The Feral Telemetry (Timestamps)
+
+* **[00:00]** - Initialization: The SaaS Rent Trap and the absurdity of the per-seat software pricing model.
+* **[05:15]** - Deconstructing the Beige World Logic: The $997/month Tenure Starter Plan replacing standard corporate suites.
+* **[10:30]** - The Feral Stack: Transitioning to self-hosted open-source tools like DocuSeal, Vaultwarden, and Cal.com.
+* **[15:45]** - Securing the Perimeter: Deploying Caddy reverse proxies and the Principal Agent Protocol (PAP) for zero-trust access.
+* **[18:20]** - The Dev Loop: Replacing third-party repositories with GitLab CE and automating the CI/CD pipeline.
+* **[21:00]** - System Audit and Motor Exit Points: Shifting from software renters to digital real estate landlords.
+
+### Lexicon Markers Triggered
+
+* **The Toll Booth Model:** The traditional SaaS paradigm where vendors control compute and pricing, taxing business growth by charging per user, per month.
+* **Tenure:** A managed infrastructure service by Baur Software that deploys enterprise-grade, open-source equivalents to popular business tools directly onto a client's private server.
+* **Principal Agent Protocol (PAP):** A zero-trust security layer that cryptographically verifies agent identity and intent, ensuring AI agents and users only access exactly what they are mandated to see.
+
+### Out-of-Band Verification (Resources)
+
+* [The Sovereign Pilot Substack](https://jameshood118.substack.com)
+* [Baur Software](https://baursoftware.com)
+
+---
+*End of Transmission.*</description><guid isPermaLink="false">https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Escape_the_SaaS_rent_trap.m4a</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Escape_the_SaaS_rent_trap.m4a" length="10500000" type="audio/mpeg"/><pubDate>Wed, 15 Jul 2026 13:37:00 +0000</pubDate><itunes:duration>00:22:15</itunes:duration></item></channel></rss>

@@ -16,13 +16,13 @@ from feedgen.feed import FeedGenerator
 
 def generate_rss_for_show(show_slug):
     """
-    Reads Markdown files from 'show/{show_slug}/episodes/',
+    Reads Markdown files from 'inputs/show/{show_slug}/episodes/',
     parses YAML frontmatter, ensures persistent GUIDs, and compiles 
-    the data into 'show/{show_slug}/rss.xml'.
+    the data into 'outputs/show/{show_slug}/rss.xml'.
     """
-    # Construct the path using the new show/{show-name}/episodes/ standard
-    show_root = os.path.join('show', show_slug)
-    episodes_dir = os.path.join(show_root, 'episodes')
+    # Construct the path using the new inputs/show/{show-name}/episodes/ standard
+    shows_base_dir = os.path.join('inputs', 'show')
+    episodes_dir = os.path.join(shows_base_dir, 'episodes')
     
     if not os.path.exists(episodes_dir):
         print(f"Skipping '{show_slug}': No episodes directory found at '{episodes_dir}'.")
@@ -87,7 +87,8 @@ def generate_rss_for_show(show_slug):
             fe.podcast.itunes_episode(int(post['episode_number']))
 
     # Output the RSS file directly inside the show's root directory: show/{show-slug}/rss.xml
-    output_file = os.path.join(show_root, 'rss.xml')
+    shows_output_dir = os.path.join('outputs', 'show')
+    output_file = os.path.join(shows_output_dir, 'rss.xml')
     fg.rss_file(output_file)
     print(f"[{show_title}] Feral RSS Feed generated successfully at {output_file}. Bare-Metal Custody maintained.")
 

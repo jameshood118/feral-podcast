@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'show/**/episodes/**' 
+      - 'outputs/show/**/rss.xml'
   workflow_dispatch: # Allows manual trigger from the GitHub dashboard
 
 jobs:
@@ -33,5 +33,5 @@ jobs:
         run: |
           git config --global user.name "Sovereign-Automation-Bot"
           git config --global user.email "bot@saiphhouse.net"
-          git add show/**/rss.xml
+          git add outputs/show/**/rss.xml
           git diff --quiet && git diff --staged --quiet || (git commit -m "Automated RSS XML Update: Multi-Show Sync" && git push)
