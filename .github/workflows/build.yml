@@ -1,11 +1,11 @@
-name: Deploy Feral Podcast
+name: Deploy Feral Podcast Feeds
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'episodes/**' # Only triggers when you drop a new episode
+      - 'show/**/episodes/**' 
   workflow_dispatch: # Allows manual trigger from the GitHub dashboard
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt
+        run: pip pip install -r requirements.txt
 
       - name: Execute Python Engine
         run: python generate_feed.py
@@ -33,5 +33,5 @@ jobs:
         run: |
           git config --global user.name "Sovereign-Automation-Bot"
           git config --global user.email "bot@saiphhouse.net"
-          git add rss.xml
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated RSS XML Update" && git push)
+          git add show/**/rss.xml
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated RSS XML Update: Multi-Show Sync" && git push)
