@@ -28,7 +28,7 @@ Welcome to The Sovereign Pilot. In this episode, we execute a transformative bre
 
 ### Out-of-Band Verification (Resources)
 
-* [Saiph House Operations](https://your-link-here.com)
+* [Saiph House Operations](https://www.linkedin.com/in/jameshood118)
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
