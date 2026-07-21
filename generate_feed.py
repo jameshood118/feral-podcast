@@ -12,7 +12,7 @@ import yaml
 import frontmatter
 import pytz
 from feedgen.feed import FeedGenerator
-import mutagen
+from tinytag import TinyTag
 
 INPUT_ROOT = os.path.join("inputs", "show")
 OUTPUT_ROOT = os.path.join("outputs", "show")
@@ -85,7 +85,7 @@ def generate_rss_for_show(show_slug):
             print(f"[{show_title}] Injected new persistent GUID into {filename}")
         # endregion
 
-        # region 2. FERAL TELEMETRY (MUTAGEN)
+        # region 2. FERAL TELEMETRY (TINYTAG)
         current_size = str(post.metadata.get('file_size', ''))
         current_duration = str(post.metadata.get('duration', ''))
 
@@ -96,12 +96,14 @@ def generate_rss_for_show(show_slug):
 
             if os.path.exists(local_audio_path):
                 try:
+                    # Inject Byte Size
                     size_bytes = os.path.getsize(local_audio_path)
                     post.metadata['file_size'] = str(size_bytes)
 
-                    audio = mutagen.File(local_audio_path)
-                    if audio is not None and audio.info is not None:
-                        duration_seconds = int(audio.info.length)
+                    # Honey Badger Duration Extraction
+                    tag = TinyTag.get(local_audio_path)
+                    if tag.duration is not None and tag.duration > 0:
+                        duration_seconds = int(tag.duration)
                         formatted_duration = str(timedelta(seconds=duration_seconds))
                         
                         if len(formatted_duration.split(':')) == 2:
@@ -113,13 +115,12 @@ def generate_rss_for_show(show_slug):
                         needs_save = True
                         print(f"[{show_title}] Injected Size ({size_bytes}) & Duration ({formatted_duration}) into {filename}")
                     else:
-                        print(f"[WARNING] Mutagen could not read headers for {audio_filename}")
+                        print(f"[WARNING] TinyTag could not calculate duration for {audio_filename}")
                 except Exception as e:
-                    print(f"[WARNING] Mutagen failed to parse {audio_filename}: {e}")
+                    print(f"[WARNING] TinyTag failed to parse {audio_filename}: {e}")
             else:
                 pass 
         # endregion
-
         if needs_save:
             with open(filepath, 'w', encoding="utf-8") as f:
                 f.write(frontmatter.dumps(post))

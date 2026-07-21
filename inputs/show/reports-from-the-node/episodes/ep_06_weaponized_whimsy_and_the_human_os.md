@@ -1,7 +1,7 @@
 ---
 audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponized_Whimsy_and_the_Human_OS.m4a
 date: '2026-07-23T10:00:00Z'
-duration: 00:00:00
+duration: 00:33:51
 file_size: '65379102'
 guid: f444d79c-5694-451d-8af3-0e2b2bedd282
 title: 'Episode 6: Weaponized Whimsy and the Human OS'

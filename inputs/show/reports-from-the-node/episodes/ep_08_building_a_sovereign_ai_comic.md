@@ -1,7 +1,7 @@
 ---
 audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Building_a_sovereign_AI_comic_from_spite.m4a
 date: '2026-07-25T10:00:00Z'
-duration: 00:00:00
+duration: 00:33:05
 file_size: '63896397'
 guid: 8de23a69-b9f7-47a6-b1b3-4d6d087caad7
 title: 'Episode 8: Building a Sovereign AI Comic from Spite'

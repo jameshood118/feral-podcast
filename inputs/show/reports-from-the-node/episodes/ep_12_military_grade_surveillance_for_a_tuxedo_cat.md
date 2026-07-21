@@ -1,7 +1,7 @@
 ---
 audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Military_grade_surveillance_for_a_tuxedo_cat.m4a
 date: '2026-07-29T10:00:00Z'
-duration: 00:00:00
+duration: 00:22:38
 file_size: '43707939'
 guid: 1129b4d3-17db-4f07-83b1-eb232015d64a
 title: 'Episode 12: Military-Grade Surveillance for a Tuxedo Cat'

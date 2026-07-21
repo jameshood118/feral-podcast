@@ -1,7 +1,7 @@
 ---
 audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Clockwork_Necronomicon_and_the_Wake-Mux_engine.m4a
 date: '2026-07-27T10:00:00Z'
-duration: 00:00:00
+duration: 00:37:49
 file_size: '73030067'
 guid: 431473bc-8909-4f13-bb4d-01e8e806442d
 title: 'Episode 10: The Clockwork Necronomicon and the Wake-Mux Engine'

@@ -1,7 +1,7 @@
 ---
 audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponizing_human_whimsy_against_the_machine.m4a
 date: '2026-07-22T10:00:00Z'
-duration: 00:00:00
+duration: 00:43:04
 file_size: '83166493'
 guid: 6f72cd65-e69a-4a9f-b1b7-9aabc7fefeea
 title: 'Episode 5: Weaponizing Human Whimsy against the Machine'

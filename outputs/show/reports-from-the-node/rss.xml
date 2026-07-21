@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Reports from the Node</title><link>https://jameshood118.github.io/feral-podcast/show/reports-from-the-node/</link><description>High-friction truths and systems architecture from Reports from the Node.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en</language><lastBuildDate>Tue, 21 Jul 2026 23:00:23 +0000</lastBuildDate><itunes:author>James Hood</itunes:author><itunes:category text="Technology"><itunes:category text="Podcasting"/></itunes:category><itunes:image href="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"/><itunes:explicit>no</itunes:explicit><itunes:owner><itunes:name>James Hood</itunes:name><itunes:email>jameshood118@gmail.com</itunes:email></itunes:owner><itunes:type>episodic</itunes:type><item><title>Episode 1: Escape the SaaS Rent Trap</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the per-seat SaaS pricing model and dismantle the SaaS rent trap efficiency trap. We explore how Baur Software's Tenure plan replaces expensive third-party tools with sovereign, open-source infrastructure.
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Reports from the Node</title><link>https://jameshood118.github.io/feral-podcast/show/reports-from-the-node/</link><description>High-friction truths and systems architecture from Reports from the Node.</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><language>en</language><lastBuildDate>Tue, 21 Jul 2026 23:19:42 +0000</lastBuildDate><itunes:author>James Hood</itunes:author><itunes:category text="Technology"><itunes:category text="Podcasting"/></itunes:category><itunes:image href="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"/><itunes:explicit>no</itunes:explicit><itunes:owner><itunes:name>James Hood</itunes:name><itunes:email>jameshood118@gmail.com</itunes:email></itunes:owner><itunes:type>episodic</itunes:type><item><title>Episode 1: Escape the SaaS Rent Trap</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the per-seat SaaS pricing model and dismantle the SaaS rent trap efficiency trap. We explore how Baur Software's Tenure plan replaces expensive third-party tools with sovereign, open-source infrastructure.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -84,7 +84,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">905c3ace-9c9f-457f-9147-819b8af1e3f1</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Refactoring_retail_labor_for_corporate_compliance.m4a" length="80656263" type="audio/x-m4a"/><pubDate>Tue, 21 Jul 2026 16:04:10 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 5: Weaponizing Human Whimsy against the Machine</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of creative resistance and dismantle the sterile, corporate efficiency trap. We explore how humor, absurdity, and "Weaponized Whimsy" are not distractions, but essential cybersecurity protocols for the Human OS.
+*End of Transmission.*</description><guid isPermaLink="false">905c3ace-9c9f-457f-9147-819b8af1e3f1</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Refactoring_retail_labor_for_corporate_compliance.m4a" length="80656263" type="audio/x-m4a"/><pubDate>Tue, 21 Jul 2026 16:04:10 +0000</pubDate><itunes:duration>00:41:46</itunes:duration></item><item><title>Episode 5: Weaponizing Human Whimsy against the Machine</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of creative resistance and dismantle the sterile, corporate efficiency trap. We explore how humor, absurdity, and "Weaponized Whimsy" are not distractions, but essential cybersecurity protocols for the Human OS.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -103,7 +103,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">6f72cd65-e69a-4a9f-b1b7-9aabc7fefeea</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponizing_human_whimsy_against_the_machine.m4a" length="83166493" type="audio/x-m4a"/><pubDate>Wed, 22 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 6: Weaponized Whimsy and the Human OS</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of cognitive architecture and dismantle the "Normie" efficiency trap. We explore how integrating Weaponized Whimsy directly into your biological hardware creates an impenetrable firewall against corporate burnout.
+*End of Transmission.*</description><guid isPermaLink="false">6f72cd65-e69a-4a9f-b1b7-9aabc7fefeea</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponizing_human_whimsy_against_the_machine.m4a" length="83166493" type="audio/x-m4a"/><pubDate>Wed, 22 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:43:04</itunes:duration></item><item><title>Episode 6: Weaponized Whimsy and the Human OS</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of cognitive architecture and dismantle the "Normie" efficiency trap. We explore how integrating Weaponized Whimsy directly into your biological hardware creates an impenetrable firewall against corporate burnout.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -122,7 +122,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">f444d79c-5694-451d-8af3-0e2b2bedd282</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponized_Whimsy_and_the_Human_OS.m4a" length="65379102" type="audio/x-m4a"/><pubDate>Thu, 23 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 7: Reverse Engineering the Human Operating System</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of personal history and dismantle the "blank slate" efficiency trap. We explore how decompiling 27 years of life logs, 1993 D&amp;D campaigns, and early HTML struggles reveals the true source code of an individual's capability.
+*End of Transmission.*</description><guid isPermaLink="false">f444d79c-5694-451d-8af3-0e2b2bedd282</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponized_Whimsy_and_the_Human_OS.m4a" length="65379102" type="audio/x-m4a"/><pubDate>Thu, 23 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:33:51</itunes:duration></item><item><title>Episode 7: Reverse Engineering the Human Operating System</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of personal history and dismantle the "blank slate" efficiency trap. We explore how decompiling 27 years of life logs, 1993 D&amp;D campaigns, and early HTML struggles reveals the true source code of an individual's capability.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -141,7 +141,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">0cf24977-8b26-46f3-877d-66be724f6020</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Reverse_engineering_the_human_operating_system.m4a" length="90138168" type="audio/x-m4a"/><pubDate>Fri, 24 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 8: Building a Sovereign AI Comic from Spite</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of creative stubbornness and dismantle the "talent" efficiency trap. We explore the 2005 origins of a failed HTML/CSS webcomic and how the sheer spite of not being able to draw eventually birthed a closed-loop generative AI architecture.
+*End of Transmission.*</description><guid isPermaLink="false">0cf24977-8b26-46f3-877d-66be724f6020</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Reverse_engineering_the_human_operating_system.m4a" length="90138168" type="audio/x-m4a"/><pubDate>Fri, 24 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:46:40</itunes:duration></item><item><title>Episode 8: Building a Sovereign AI Comic from Spite</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of creative stubbornness and dismantle the "talent" efficiency trap. We explore the 2005 origins of a failed HTML/CSS webcomic and how the sheer spite of not being able to draw eventually birthed a closed-loop generative AI architecture.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -160,7 +160,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">8de23a69-b9f7-47a6-b1b3-4d6d087caad7</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Building_a_sovereign_AI_comic_from_spite.m4a" length="63896397" type="audio/x-m4a"/><pubDate>Sat, 25 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 9: Uncle Entity and the Clockwork Necronomicon</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of digital personas and dismantle the vulnerability trap. We explore the origins of Uncle Entity as a Reverse Aposematic Shield and how a 120M parameter Tiny Language Model became the brain of the Weirdling Factory.
+*End of Transmission.*</description><guid isPermaLink="false">8de23a69-b9f7-47a6-b1b3-4d6d087caad7</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Building_a_sovereign_AI_comic_from_spite.m4a" length="63896397" type="audio/x-m4a"/><pubDate>Sat, 25 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:33:05</itunes:duration></item><item><title>Episode 9: Uncle Entity and the Clockwork Necronomicon</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of digital personas and dismantle the vulnerability trap. We explore the origins of Uncle Entity as a Reverse Aposematic Shield and how a 120M parameter Tiny Language Model became the brain of the Weirdling Factory.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -179,7 +179,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">a0a51b61-cfc9-4f23-bdfa-8018b3b96707</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Uncle_Entity_and_the_Clockwork_Necronomicon.m4a" length="39334665" type="audio/x-m4a"/><pubDate>Sun, 26 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 10: The Clockwork Necronomicon and the Wake-Mux Engine</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of edge computing and dismantle the centralized AI efficiency trap. We explore how to multiplex the outputs of the Clockwork Necronomicon using the Wake-Mux Engine, piping localized intelligence directly into the Saiph House homelab.
+*End of Transmission.*</description><guid isPermaLink="false">a0a51b61-cfc9-4f23-bdfa-8018b3b96707</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Uncle_Entity_and_the_Clockwork_Necronomicon.m4a" length="39334665" type="audio/x-m4a"/><pubDate>Sun, 26 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:20:22</itunes:duration></item><item><title>Episode 10: The Clockwork Necronomicon and the Wake-Mux Engine</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of edge computing and dismantle the centralized AI efficiency trap. We explore how to multiplex the outputs of the Clockwork Necronomicon using the Wake-Mux Engine, piping localized intelligence directly into the Saiph House homelab.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -198,7 +198,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">431473bc-8909-4f13-bb4d-01e8e806442d</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Clockwork_Necronomicon_and_the_Wake-Mux_engine.m4a" length="73030067" type="audio/x-m4a"/><pubDate>Mon, 27 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 11: Accidentally Building a Sovereign AI OS</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of agentic infrastructure and dismantle the "intentional design" efficiency trap. We explore how decompiling 27 years of life logs and a spite-driven 2005 webcomic accidentally formed the cognitive architecture for a fully Sovereign AI Operating System.
+*End of Transmission.*</description><guid isPermaLink="false">431473bc-8909-4f13-bb4d-01e8e806442d</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Clockwork_Necronomicon_and_the_Wake-Mux_engine.m4a" length="73030067" type="audio/x-m4a"/><pubDate>Mon, 27 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:37:49</itunes:duration></item><item><title>Episode 11: Accidentally Building a Sovereign AI OS</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of agentic infrastructure and dismantle the "intentional design" efficiency trap. We explore how decompiling 27 years of life logs and a spite-driven 2005 webcomic accidentally formed the cognitive architecture for a fully Sovereign AI Operating System.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -217,7 +217,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">4281a6a0-8fc6-485a-8056-921c2a4cac3b</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Accidentally_building_a_sovereign_AI_OS.m4a" length="91535594" type="audio/x-m4a"/><pubDate>Tue, 28 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 12: Military-Grade Surveillance for a Tuxedo Cat</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of homelab security and dismantle the "consumer-grade" efficiency trap. We explore why trusting off-the-shelf SaaS cameras is a voluntary wiretap, and how over-engineering an air-gapped RTSP sensory array for a tuxedo cat perfectly demonstrates feral architecture in action.
+*End of Transmission.*</description><guid isPermaLink="false">4281a6a0-8fc6-485a-8056-921c2a4cac3b</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Accidentally_building_a_sovereign_AI_OS.m4a" length="91535594" type="audio/x-m4a"/><pubDate>Tue, 28 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:47:24</itunes:duration></item><item><title>Episode 12: Military-Grade Surveillance for a Tuxedo Cat</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of homelab security and dismantle the "consumer-grade" efficiency trap. We explore why trusting off-the-shelf SaaS cameras is a voluntary wiretap, and how over-engineering an air-gapped RTSP sensory array for a tuxedo cat perfectly demonstrates feral architecture in action.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -236,7 +236,7 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">1129b4d3-17db-4f07-83b1-eb232015d64a</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Military_grade_surveillance_for_a_tuxedo_cat.m4a" length="43707939" type="audio/x-m4a"/><pubDate>Wed, 29 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item><item><title>Episode 13: The Clockwork Necronomicon Tiny AI Blueprint</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of local intelligence and dismantle the "compute scale" efficiency trap. We explore the structural PyTorch blueprint for training a 120M parameter decoder-only transformer, and why a tiny, hyper-specific model beats a massive, generic one.
+*End of Transmission.*</description><guid isPermaLink="false">1129b4d3-17db-4f07-83b1-eb232015d64a</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Military_grade_surveillance_for_a_tuxedo_cat.m4a" length="43707939" type="audio/x-m4a"/><pubDate>Wed, 29 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:22:38</itunes:duration></item><item><title>Episode 13: The Clockwork Necronomicon Tiny AI Blueprint</title><description>Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of local intelligence and dismantle the "compute scale" efficiency trap. We explore the structural PyTorch blueprint for training a 120M parameter decoder-only transformer, and why a tiny, hyper-specific model beats a massive, generic one.
 
 ## The Feral Telemetry (Timestamps)
 
@@ -255,4 +255,4 @@
 * [The Sovereign Pilot Substack](https://jameshood118.substack.com)
 
 ---
-*End of Transmission.*</description><guid isPermaLink="false">43ee572d-4938-48e2-948b-c7e8c8552ee3</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_Clockwork_Necronomicon_Tiny_AI_Blueprint.m4a" length="42517463" type="audio/x-m4a"/><pubDate>Thu, 30 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:00:00</itunes:duration></item></channel></rss>
+*End of Transmission.*</description><guid isPermaLink="false">43ee572d-4938-48e2-948b-c7e8c8552ee3</guid><enclosure url="https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_Clockwork_Necronomicon_Tiny_AI_Blueprint.m4a" length="42517463" type="audio/x-m4a"/><pubDate>Thu, 30 Jul 2026 10:00:00 +0000</pubDate><itunes:duration>00:22:01</itunes:duration></item></channel></rss>
