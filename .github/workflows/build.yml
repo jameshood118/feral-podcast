@@ -29,9 +29,13 @@ jobs:
       - name: Execute Python Engine
         run: python generate_feed.py
 
-      - name: Commit XML + README to Repository
+      - name: Commit Artifacts to Repository
         run: |
           git config --global user.name "Sovereign-Automation-Bot"
           git config --global user.email "bot@saiphhouse.net"
-          git add outputs/show/**/rss.xml README.md
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated RSS + README Update: Multi-Show Sync" && git push)
+          
+          # Stage the XMLs, the README, AND any Markdown files Python just injected GUIDs into
+          git add outputs/show/**/rss.xml README.md inputs/show/**/episodes/*.md
+          
+          # The [skip ci] tag is the kill-switch that prevents the infinite recursive loop
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated RSS Update: Inject GUIDs and Sync Feeds [skip ci]" && git push)
