@@ -157,8 +157,14 @@ def update_readme_with_feeds():
     with open(README_PATH, "r") as f:
         content = f.read()
 
+    # The exact markers the script looks for
     start = ""
     end = ""
+
+    # FERAL SAFEGUARD: Prevent 'empty separator' crashes
+    if not start or not end:
+        print("Marker variables are empty. Skipping README update.")
+        return
 
     if start not in content or end not in content:
         print("README missing FEEDS markers. No update performed.")
