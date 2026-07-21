@@ -1,9 +1,10 @@
 ---
-title: "Episode 11: Accidentally Building a Sovereign AI OS"
-date: "2026-07-28T10:00:00Z"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Accidentally_building_a_sovereign_AI_OS.m4a"
-file_size: "96013352"
-duration: "[HH:MM:SS]"
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Accidentally_building_a_sovereign_AI_OS.m4a
+date: '2026-07-28T10:00:00Z'
+duration: 00:00:00
+file_size: '91535594'
+guid: 4281a6a0-8fc6-485a-8056-921c2a4cac3b
+title: 'Episode 11: Accidentally Building a Sovereign AI OS'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of agentic infrastructure and dismantle the "intentional design" efficiency trap. We explore how decompiling 27 years of life logs and a spite-driven 2005 webcomic accidentally formed the cognitive architecture for a fully Sovereign AI Operating System.

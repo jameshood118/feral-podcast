@@ -1,66 +1,56 @@
 """
 Feral Podcast RSS Generator (Multi-Show / Sovereign Braid)
-Show.yaml + Auto-README Updating Edition
+Show.yaml + Auto-README + Mutagen Telemetry + UTF-8 Hardened
 """
 
 # region IMPORTS & GLOBALS
 import os
 import uuid
-from datetime import datetime
+import urllib.parse
+from datetime import datetime, timedelta
 import yaml
 import frontmatter
 import pytz
 from feedgen.feed import FeedGenerator
+import mutagen
 
 INPUT_ROOT = os.path.join("inputs", "show")
 OUTPUT_ROOT = os.path.join("outputs", "show")
 README_PATH = "README.md"
 BASE_URL = "https://jameshood118.github.io/feral-podcast/outputs/show"
+LOCAL_AUDIO_DIR = os.path.join(".", "audio_staging")
 # endregion
 
 # region SHOW RSS GENERATION
 def generate_rss_for_show(show_slug):
-    """
-    Reads:
-        inputs/show/{show_slug}/show.yaml
-        inputs/show/{show_slug}/episodes/*.md
-    Outputs:
-        outputs/show/{show_slug}/rss.xml
-    """
-
     show_input_dir = os.path.join(INPUT_ROOT, show_slug)
     episodes_dir = os.path.join(show_input_dir, "episodes")
     show_yaml_path = os.path.join(show_input_dir, "show.yaml")
 
-    # Validate show.yaml exists
     if not os.path.exists(show_yaml_path):
         print(f"Skipping '{show_slug}': Missing show.yaml at {show_yaml_path}")
         return
 
-    # Load show metadata
-    with open(show_yaml_path, "r") as f:
+    # UTF-8 Hardened Read
+    with open(show_yaml_path, "r", encoding="utf-8") as f:
         show_meta = yaml.safe_load(f)
 
-    # Validate episodes directory
     if not os.path.exists(episodes_dir):
         print(f"Skipping '{show_slug}': Missing episodes dir at {episodes_dir}")
         return
         
-    # Prepare output dir
     show_output_dir = os.path.join(OUTPUT_ROOT, show_slug)
     os.makedirs(show_output_dir, exist_ok=True)
 
     fg = FeedGenerator()
     fg.load_extension('podcast')
 
-    # Apply Metadata from show.yaml
     show_title = show_meta.get("title", show_slug.replace("-", " ").title())
     fg.title(show_title)
     fg.description(show_meta.get("description", f"High-friction truths from {show_title}."))
     fg.link(href=show_meta.get("link", f"{BASE_URL}/{show_slug}"), rel='alternate')
     fg.language('en')
 
-    # Universal iTunes Ecosystem Tags
     # pylint: disable=no-member
     fg.podcast.itunes_author(show_meta.get("author", "James Hood"))
     fg.podcast.itunes_category(show_meta.get("category", "Technology"), show_meta.get("subcategory", "Podcasting"))
@@ -78,61 +68,88 @@ def generate_rss_for_show(show_slug):
 
     for filename in episode_files:
         filepath = os.path.join(episodes_dir, filename)
-        post = frontmatter.load(filepath)
+        
+        # UTF-8 Hardened Frontmatter Load
+        with open(filepath, "r", encoding="utf-8") as f:
+            post = frontmatter.load(f)
+            
+        needs_save = False
 
-        # region THE GUID INJECTION PROTOCOL
-        # ---------------------------------------------------------
-        # WHAT THIS DOES:
-        # If an episode markdown file is pushed WITHOUT a 'guid' in the YAML,
-        # this block intercepts it, generates a true UUIDv4, injects it into
-        # the frontmatter, and physically overwrites the .md file before continuing.
-        # 
-        # WHY IT MATTERS:
-        # This guarantees the GUID never changes, even if you rename the file,
-        # fix a typo, or change hosts. Apple Podcasts demands GUID stability.
-        # ---------------------------------------------------------
+        # region 1. GUID INJECTION
         if 'guid' not in post.metadata:
             new_guid = str(uuid.uuid4())
             post.metadata['guid'] = new_guid
-            
-            # Write the modified frontmatter back to the physical file
-            with open(filepath, 'w') as f:
-                f.write(frontmatter.dumps(post))
+            needs_save = True
             print(f"[{show_title}] Injected new persistent GUID into {filename}")
         # endregion
 
-        fe = fg.add_entry()
+        # region 2. FERAL TELEMETRY (MUTAGEN)
+        current_size = str(post.metadata.get('file_size', ''))
+        current_duration = str(post.metadata.get('duration', ''))
 
-        # Safely map the persistent GUID
+        if current_size == '[SIZE_IN_BYTES]' or current_duration in ['[HH:MM:SS]', '[DURATION]', '00:00:00'] or not current_size or not current_duration:
+            audio_url = post.metadata.get('audio_url', '')
+            audio_filename = urllib.parse.unquote(audio_url.split('/')[-1])
+            local_audio_path = os.path.join(LOCAL_AUDIO_DIR, audio_filename)
+
+            if os.path.exists(local_audio_path):
+                try:
+                    # Inject Byte Size
+                    size_bytes = os.path.getsize(local_audio_path)
+                    post.metadata['file_size'] = str(size_bytes)
+
+                    # Hardened Duration Extraction
+                    audio = mutagen.File(local_audio_path)
+                    if audio is not None and audio.info is not None:
+                        duration_seconds = int(audio.info.length)
+                        formatted_duration = str(timedelta(seconds=duration_seconds))
+                        
+                        if len(formatted_duration.split(':')) == 2:
+                            formatted_duration = f"00:{formatted_duration}"
+                        elif len(formatted_duration) == 7: 
+                            formatted_duration = f"0{formatted_duration}"
+                        
+                        post.metadata['duration'] = formatted_duration
+                        needs_save = True
+                        print(f"[{show_title}] Injected Size ({size_bytes}) & Duration ({formatted_duration}) into {filename}")
+                    else:
+                        print(f"[WARNING] Mutagen could not read headers for {audio_filename}")
+                except Exception as e:
+                    print(f"[WARNING] Mutagen failed to parse {audio_filename}: {e}")
+            else:
+                pass # Suppress missing local file warnings if already processed
+        # endregion
+
+        # UTF-8 Hardened File Save
+        if needs_save:
+            with open(filepath, 'w', encoding="utf-8") as f:
+                f.write(frontmatter.dumps(post))
+
+        fe = fg.add_entry()
         fe.id(post.metadata['guid'])
         fe.title(post.metadata['title'])
         fe.description(post.content)
 
-        # Parse date and ensure UTC timezone awareness
         pub_date = datetime.strptime(post.metadata['date'], "%Y-%m-%dT%H:%M:%SZ")
         pub_date = pub_date.replace(tzinfo=pytz.UTC)
         fe.pubDate(pub_date)
 
-        # Add the audio payload enclosure
-        fe.enclosure(post.metadata['audio_url'], str(post.metadata['file_size']), 'audio/x-m4a')
-        fe.podcast.itunes_duration(post.metadata['duration'])
+        fe.enclosure(post.metadata['audio_url'], str(post.metadata.get('file_size', '0')), 'audio/x-m4a')
+        fe.podcast.itunes_duration(post.metadata.get('duration', '00:00:00'))
 
-        # Optional Episode-Level Taxonomy
         if 'season' in post.metadata:
             fe.podcast.itunes_season(int(post.metadata['season']))
         if 'episode_number' in post.metadata:
             fe.podcast.itunes_episode(int(post.metadata['episode_number']))
 
     output_file = os.path.join(show_output_dir, 'rss.xml')
+    # Use explicit encoding for writing the XML file via feedgen if needed, but feedgen handles it.
     fg.rss_file(output_file)
     print(f"[{show_title}] RSS Feed generated successfully at {output_file}.")
 # endregion
 
 # region README UPDATING
 def update_readme_with_feeds():
-    """
-    Scans inputs/show/ for show directories and dynamically updates the README.
-    """
     if not os.path.exists(INPUT_ROOT):
         return
 
@@ -143,7 +160,7 @@ def update_readme_with_feeds():
         show_yaml_path = os.path.join(INPUT_ROOT, slug, "show.yaml")
         title = slug.replace("-", " ").title()
         if os.path.exists(show_yaml_path):
-            with open(show_yaml_path, "r") as f:
+            with open(show_yaml_path, "r", encoding="utf-8") as f:
                 meta = yaml.safe_load(f)
                 if meta and "title" in meta:
                     title = meta["title"]
@@ -154,38 +171,37 @@ def update_readme_with_feeds():
     if not os.path.exists(README_PATH):
         return
 
-    with open(README_PATH, "r") as f:
+    # UTF-8 Hardened README Read
+    with open(README_PATH, "r", encoding="utf-8") as f:
         content = f.read()
 
     # The exact markers the script looks for
     start = ""
     end = ""
 
-    # FERAL SAFEGUARD: Prevent 'empty separator' crashes
+    # FERAL SAFEGUARD 1: Check the Python Script Variables
     if not start or not end:
-        print("Marker variables are empty. Skipping README update.")
+        print("[SYSTEM ERROR] Python script misconfiguration: The 'start' or 'end' marker variables inside generate_feed.py are blank. Fix the script.")
         return
 
+    # FERAL SAFEGUARD 2: Check the README.md File Contents
     if start not in content or end not in content:
-        print("README missing FEEDS markers. No update performed.")
+        print(f"[SYSTEM WARNING] README.md is missing the specific HTML comments ({start} and/or {end}). Cannot auto-inject feeds.")
         return
 
     before = content.split(start)[0]
     after = content.split(end)[1]
-
     new_section = start + "\n" + "\n".join(lines) + "\n" + end
 
-    with open(README_PATH, "w") as f:
+    # UTF-8 Hardened README Write
+    with open(README_PATH, "w", encoding="utf-8") as f:
         f.write(before + new_section + after)
 
-    print("README.md updated with latest feed list.")
+    print("[SYSTEM NOTIFICATION] README.md successfully updated with latest feed list.")
 # endregion
 
 # region MAIN EXECUTION
 def scan_and_generate():
-    """
-    Main entry point. Scans inputs/show/ and triggers builds.
-    """
     if not os.path.exists(INPUT_ROOT):
         print(f"Input directory '{INPUT_ROOT}' does not exist.")
         return
@@ -199,7 +215,6 @@ def scan_and_generate():
     for show_slug in shows:
         generate_rss_for_show(show_slug)
         
-    # Update README after processing all feeds
     update_readme_with_feeds()
 
 if __name__ == "__main__":

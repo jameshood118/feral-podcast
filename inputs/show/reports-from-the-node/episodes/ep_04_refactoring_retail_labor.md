@@ -1,9 +1,10 @@
 ---
-title: "Episode 4: Refactoring Retail Labor for Corporate Compliance"
-date: "2026-07-21T16:04:10Z"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Refactoring_retail_labor_for_corporate_compliance.m4a"
-file_size: "[SIZE_IN_BYTES]"
-duration: "[DURATION]"
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Refactoring_retail_labor_for_corporate_compliance.m4a
+date: '2026-07-21T16:04:10Z'
+duration: 00:00:00
+file_size: '80656263'
+guid: 905c3ace-9c9f-457f-9147-819b8af1e3f1
+title: 'Episode 4: Refactoring Retail Labor for Corporate Compliance'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of retail labor and dismantle the Beige World efficiency trap that categorizes highly skilled operators as "unskilled labor." We explore how an elite compliance, asset protection, and verification engine is systematically misclassified by algorithmic gatekeepers.

@@ -1,9 +1,10 @@
 ---
-title: "Episode 10: The Clockwork Necronomicon and the Wake-Mux Engine"
-date: "2026-07-27T10:00:00Z"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Clockwork_Necronomicon_and_the_Wake-Mux_engine.m4a"
-file_size: "[SIZE_IN_BYTES]"
-duration: "[DURATION]"
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Clockwork_Necronomicon_and_the_Wake-Mux_engine.m4a
+date: '2026-07-27T10:00:00Z'
+duration: 00:00:00
+file_size: '73030067'
+guid: 431473bc-8909-4f13-bb4d-01e8e806442d
+title: 'Episode 10: The Clockwork Necronomicon and the Wake-Mux Engine'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of edge computing and dismantle the centralized AI efficiency trap. We explore how to multiplex the outputs of the Clockwork Necronomicon using the Wake-Mux Engine, piping localized intelligence directly into the Saiph House homelab.

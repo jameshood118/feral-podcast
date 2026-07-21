@@ -1,9 +1,10 @@
 ---
-title: "Episode 9: Uncle Entity and the Clockwork Necronomicon"
-date: "2026-07-26T10:00:00Z"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Uncle_Entity_and_the_Clockwork_Necronomicon.m4a"
-file_size: "[SIZE_IN_BYTES]"
-duration: "[DURATION]"
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Uncle_Entity_and_the_Clockwork_Necronomicon.m4a
+date: '2026-07-26T10:00:00Z'
+duration: 00:00:00
+file_size: '39334665'
+guid: a0a51b61-cfc9-4f23-bdfa-8018b3b96707
+title: 'Episode 9: Uncle Entity and the Clockwork Necronomicon'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of digital personas and dismantle the vulnerability trap. We explore the origins of Uncle Entity as a Reverse Aposematic Shield and how a 120M parameter Tiny Language Model became the brain of the Weirdling Factory.

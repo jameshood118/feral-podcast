@@ -1,9 +1,10 @@
 ---
-title: "Episode 5: Weaponizing Human Whimsy against the Machine"
-date: "2026-07-22T10:00:00Z"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponizing_human_whimsy_against_the_machine.m4a"
-file_size: "[SIZE_IN_BYTES]"
-duration: "[DURATION]"
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponizing_human_whimsy_against_the_machine.m4a
+date: '2026-07-22T10:00:00Z'
+duration: 00:00:00
+file_size: '83166493'
+guid: 6f72cd65-e69a-4a9f-b1b7-9aabc7fefeea
+title: 'Episode 5: Weaponizing Human Whimsy against the Machine'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of creative resistance and dismantle the sterile, corporate efficiency trap. We explore how humor, absurdity, and "Weaponized Whimsy" are not distractions, but essential cybersecurity protocols for the Human OS.

@@ -1,9 +1,10 @@
 ---
-title: "Episode 6: Weaponized Whimsy and the Human OS"
-date: "2026-07-23T10:00:00Z"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponized_Whimsy_and_the_Human_OS.m4a"
-file_size: "[SIZE_IN_BYTES]"
-duration: "[DURATION]"
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Weaponized_Whimsy_and_the_Human_OS.m4a
+date: '2026-07-23T10:00:00Z'
+duration: 00:00:00
+file_size: '65379102'
+guid: f444d79c-5694-451d-8af3-0e2b2bedd282
+title: 'Episode 6: Weaponized Whimsy and the Human OS'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of cognitive architecture and dismantle the "Normie" efficiency trap. We explore how integrating Weaponized Whimsy directly into your biological hardware creates an impenetrable firewall against corporate burnout.
