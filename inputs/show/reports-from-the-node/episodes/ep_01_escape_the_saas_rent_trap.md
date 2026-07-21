@@ -4,6 +4,9 @@ date: "2026-07-15T13:37:00Z"
 audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Escape_the_SaaS_rent_trap.m4a"
 file_size: "10500000"
 duration: "00:22:15"
+season: "1"
+episode_number: "1"
+guid: "49ec8d8c-09ac-5eac-a37d-95ece4c430b6"
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the per-seat SaaS pricing model and dismantle the SaaS rent trap efficiency trap. We explore how Baur Software's Tenure plan replaces expensive third-party tools with sovereign, open-source infrastructure.
