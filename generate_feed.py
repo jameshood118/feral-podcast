@@ -66,10 +66,12 @@ def generate_rss_for_show(show_slug):
         print(f"Skipping '{show_slug}': 'episodes' directory is empty.")
         return
 
+    # THE CHRONOLOGICAL SORT PROTOCOL
+    parsed_episodes = []
+
     for filename in episode_files:
         filepath = os.path.join(episodes_dir, filename)
         
-        # UTF-8 Hardened Frontmatter Load
         with open(filepath, "r", encoding="utf-8") as f:
             post = frontmatter.load(f)
             
@@ -94,11 +96,9 @@ def generate_rss_for_show(show_slug):
 
             if os.path.exists(local_audio_path):
                 try:
-                    # Inject Byte Size
                     size_bytes = os.path.getsize(local_audio_path)
                     post.metadata['file_size'] = str(size_bytes)
 
-                    # Hardened Duration Extraction
                     audio = mutagen.File(local_audio_path)
                     if audio is not None and audio.info is not None:
                         duration_seconds = int(audio.info.length)
@@ -117,23 +117,34 @@ def generate_rss_for_show(show_slug):
                 except Exception as e:
                     print(f"[WARNING] Mutagen failed to parse {audio_filename}: {e}")
             else:
-                pass # Suppress missing local file warnings if already processed
+                pass 
         # endregion
 
-        # UTF-8 Hardened File Save
         if needs_save:
             with open(filepath, 'w', encoding="utf-8") as f:
                 f.write(frontmatter.dumps(post))
 
+        # Parse the date so we can sort mathematically
+        pub_date = datetime.strptime(post.metadata['date'], "%Y-%m-%dT%H:%M:%SZ")
+        pub_date = pub_date.replace(tzinfo=pytz.UTC)
+        
+        # Store in memory
+        parsed_episodes.append({
+            'post': post,
+            'pub_date': pub_date
+        })
+
+    # FERAL ALIGNMENT: Sort descending by date (Newest episodes at the top)
+    parsed_episodes.sort(key=lambda x: x['pub_date'], reverse=True)
+
+    # Build the final XML strictly in the sorted order
+    for ep in parsed_episodes:
+        post = ep['post']
         fe = fg.add_entry()
         fe.id(post.metadata['guid'])
         fe.title(post.metadata['title'])
         fe.description(post.content)
-
-        pub_date = datetime.strptime(post.metadata['date'], "%Y-%m-%dT%H:%M:%SZ")
-        pub_date = pub_date.replace(tzinfo=pytz.UTC)
-        fe.pubDate(pub_date)
-
+        fe.pubDate(ep['pub_date'])
         fe.enclosure(post.metadata['audio_url'], str(post.metadata.get('file_size', '0')), 'audio/x-m4a')
         fe.podcast.itunes_duration(post.metadata.get('duration', '00:00:00'))
 
@@ -176,8 +187,8 @@ def update_readme_with_feeds():
         content = f.read()
 
     # The exact markers the script looks for
-    start = ""
-    end = ""
+    start = "<!-- FEEDS-START -->"
+    end = "<!-- FEEDS-END -->"
 
     # FERAL SAFEGUARD 1: Check the Python Script Variables
     if not start or not end:

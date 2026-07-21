@@ -39,12 +39,10 @@ You pay once for the architecture, and you never pay a monthly podcasting SaaS f
 👉 **[Ready to claim your infrastructure? Let's build your pipeline.](mailto:jameshood118@gmail.com)**
 
 <!-- FEEDS-START -->
-## Podcast Feeds
+- **Reports from the Node**
+  https://jameshood118.github.io/feral-podcast/outputs/show/reports-from-the-node/rss.xml
 
 - **Session Zero**
   https://jameshood118.github.io/feral-podcast/outputs/show/session-zero/rss.xml
-
-- **Reports from the Node**
-  https://jameshood118.github.io/feral-podcast/outputs/show/reports-from-the-node/rss.xml
 
 <!-- FEEDS-END -->

@@ -1,24 +1,24 @@
 ---
-audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_Clockwork_Necronomicon_Tiny_AI_Blueprint.m4a
-date: '2026-07-30T10:00:00Z'
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Military_grade_surveillance_for_a_tuxedo_cat.m4a
+date: '2026-07-29T10:00:00Z'
 duration: 00:00:00
-file_size: '42517463'
-guid: c36d572f-8930-42f0-8ec4-0f0b0440b801
-title: 'Episode 13: The Clockwork Necronomicon Tiny AI Blueprint'
+file_size: '43707939'
+guid: 1129b4d3-17db-4f07-83b1-eb232015d64a
+title: 'Episode 12: Military-Grade Surveillance for a Tuxedo Cat'
 ---
 
-Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of local intelligence and dismantle the "compute scale" efficiency trap. We explore the structural PyTorch blueprint for training a 120M parameter decoder-only transformer, and why a tiny, hyper-specific model beats a massive, generic one.
+Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of homelab security and dismantle the "consumer-grade" efficiency trap. We explore why trusting off-the-shelf SaaS cameras is a voluntary wiretap, and how over-engineering an air-gapped RTSP sensory array for a tuxedo cat perfectly demonstrates feral architecture in action.
 
 ## The Feral Telemetry (Timestamps)
 
-* **[00:00]** - Initialization and the Feral Boot Sequence: Sizing the Necronomicon for edge deployment and why parameter efficiency matters.
-* **[10:15]** - Deconstructing the Beige World Logic: The lie that you need an H100 GPU cluster to run meaningful AI, and why 70B parameters of "slop" is useless to a Sovereign Pilot.
-* **[25:30]** - System Audit and Motor Exit Points: Compiling the final model weights into a Q4_K_M GGUF file for deployment on a Raspberry Pi 5.
+* **[00:00]** - Initialization and the Feral Boot Sequence: The Tuxedo Cat threat model and the necessity of edge-node vision.
+* **[10:15]** - Deconstructing the Beige World Logic: Why Ring, Nest, and cloud-dependent cameras are just leased liabilities masquerading as security.
+* **[25:30]** - System Audit and Motor Exit Points: Routing raw RTSP video streams through localized object detection without ever pinging a third-party server.
 
 ### Lexicon Markers Triggered
 
-* **Q4_K_M Quantization:** A specific model compression technique that reduces the memory footprint of a neural network without catastrophic loss of reasoning, allowing it to run on low-power edge devices.
-* **Hyper-Specific Truth:** A localized model trained strictly on a highly curated, sovereign dataset (e.g., 27 years of life logs), ensuring maximum contextual accuracy over broad, shallow general knowledge.
+* **Air-Gapped Sensory Array:** A localized network of cameras and sensors that process computer vision and object detection entirely on local bare metal, incapable of leaking data to the open web.
+* **The Consumer-Grade Trap:** The illusion that trading infrastructure sovereignty for easy "plug-and-play" cloud installation is a fair deal.
 
 ### Out-of-Band Verification (Resources)
 
