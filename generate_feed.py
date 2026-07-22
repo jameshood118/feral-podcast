@@ -13,6 +13,10 @@ import frontmatter
 import pytz
 from feedgen.feed import FeedGenerator
 from tinytag import TinyTag
+import markdown
+# endregion
+
+# region CONSTANTS
 
 INPUT_ROOT = os.path.join("inputs", "show")
 OUTPUT_ROOT = os.path.join("outputs", "show")
@@ -144,7 +148,16 @@ def generate_rss_for_show(show_slug):
         fe = fg.add_entry()
         fe.id(post.metadata['guid'])
         fe.title(post.metadata['title'])
-        fe.description(post.content)
+        # region 3. THE TRANSLATION LAYER
+        # Convert raw Markdown content into clean HTML for the RSS feed
+        html_description = markdown.markdown(post.content)
+        
+        # Feed the HTML into the standard description tag
+        fe.description(html_description)
+        
+        # Feed the HTML into the <content:encoded> tag (Crucial for Apple Podcasts & Substack)
+        fe.content(html_description)
+        # endregion
         fe.pubDate(ep['pub_date'])
         fe.enclosure(post.metadata['audio_url'], str(post.metadata.get('file_size', '0')), 'audio/x-m4a')
         fe.podcast.itunes_duration(post.metadata.get('duration', '00:00:00'))
