@@ -52,14 +52,28 @@ def generate_rss_for_show(show_slug):
     show_title = show_meta.get("title", show_slug.replace("-", " ").title())
     fg.title(show_title)
     fg.description(show_meta.get("description", f"High-friction truths from {show_title}."))
-    fg.link(href=show_meta.get("link", f"{BASE_URL}/{show_slug}"), rel='alternate')
+    fg.link(href=f"{BASE_URL}/{show_slug}/rss.xml", rel="self", type="application/rss+xml")
     fg.language('en')
 
-    # pylint: disable=no-member
+# pylint: disable=no-member
     fg.podcast.itunes_author(show_meta.get("author", "James Hood"))
-    fg.podcast.itunes_category(show_meta.get("category", "Technology"), show_meta.get("subcategory", "Podcasting"))
-    fg.podcast.itunes_explicit(show_meta.get("explicit", "no"))
+    
+    # FIX 1: Feedgen requires a dictionary for Apple categories
+    cat = show_meta.get("category", "Technology")
+    subcat = show_meta.get("subcategory")
+    if subcat:
+        fg.podcast.itunes_category({'cat': cat, 'sub': subcat})
+    else:
+        fg.podcast.itunes_category({'cat': cat})
+
+    # FIX 2: Bypassing feedgen's internal validation trap. 
+    # Feedgen strictly requires 'yes', 'no', or 'clean', even if W3C complains.
+    explicit_raw = str(show_meta.get("explicit", "no")).lower()
+    explicit_clean = "yes" if explicit_raw in ["true", "yes", "y", "1"] else "no"
+    fg.podcast.itunes_explicit(explicit_clean)
+    
     fg.podcast.itunes_owner(email=show_meta.get("email", "jameshood118@gmail.com"), name=show_meta.get("author", "James Hood"))
+    
     if "image" in show_meta:
         fg.podcast.itunes_image(show_meta["image"])
     fg.podcast.itunes_type('episodic')

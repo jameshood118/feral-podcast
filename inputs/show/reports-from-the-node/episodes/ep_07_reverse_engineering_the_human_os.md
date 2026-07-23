@@ -1,9 +1,11 @@
 ---
 audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Reverse_engineering_the_human_operating_system.m4a
-date: '2026-07-24T10:00:00Z'
+date: '2026-07-22T08:00:00Z'
 duration: 00:46:40
+episode_number: 7
 file_size: '90138168'
 guid: 0cf24977-8b26-46f3-877d-66be724f6020
+season: 1
 title: 'Episode 7: Reverse Engineering the Human Operating System'
 ---
 
