@@ -1,14 +1,12 @@
 ---
-title: "Episode 14: Shingan Water Mantis Combat Operating System"
-
-date: "2026-08-02T09:28:59Z"
-
-audio_url: "https://drive.google.com/uc?export=download&id=[INSERT_GOOGLE_DRIVE_FILE_ID_HERE]"
-
-file_size: "81267573"
-
-duration: "[INSERT_EXACT_DURATION_HH:MM:SS]"
-
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Shingan_Water_Mantis_Combat_Operating_System.m4a
+date: '2026-08-02T09:28:59Z'
+duration: 00:42:05
+episode_number: 14
+file_size: '81267573'
+guid: b57c5897-22f4-48c9-8a16-e90186bbc546
+season: 1
+title: 'Episode 14: Shingan Water Mantis Combat Operating System'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the Shingan Water Mantis Combat Operating System and dismantle the rigidity of classical form-based martial arts efficiency traps.
