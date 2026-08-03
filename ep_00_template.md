@@ -5,7 +5,9 @@ title: "Episode X: [Your Feral Title Here]"
 
 date: "YYYY-MM-DDTHH:MM:SSZ"
 
-audio_url: "https://drive.google.com/uc?export=download&id=[YOUR_FILE_ID]"
+guid: "[INSERT_UUID_HERE]"
+
+audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/[YOUR_FILENAME.m4a]"
 
 file_size: "[SIZE_IN_BYTES]"
 
