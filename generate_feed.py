@@ -95,12 +95,14 @@ def generate_rss_for_show(show_slug):
             
         needs_save = False
 
-        # region 1. GUID INJECTION
+        # region 1. GUID INJECTION (Substack-Compliant Short GUID)
         if 'guid' not in post.metadata:
-            new_guid = str(uuid.uuid4())
+            # Substack Beige-World Fix: Use a 12-character truncated hex instead of a full 36-char UUID.
+            # Legacy files (Episodes 1-13) already have a 'guid' in frontmatter, so they are air-gapped from this change.
+            new_guid = uuid.uuid4().hex[:12] 
             post.metadata['guid'] = new_guid
             needs_save = True
-            print(f"[{show_title}] Injected new persistent GUID into {filename}")
+            print(f"[{show_title}] Injected new short GUID ({new_guid}) into {filename}")
         # endregion
 
         # region 2. FERAL TELEMETRY (TINYTAG)

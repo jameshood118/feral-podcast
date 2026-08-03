@@ -4,7 +4,7 @@ date: '2026-08-02T09:28:59Z'
 duration: 00:42:05
 episode_number: 14
 file_size: '81267573'
-guid: b57c5897-22f4-48c9-8a16-e90186bbc546
+guid: b57c5897-22f4-48c9-8a16
 season: 1
 title: 'Episode 14: Shingan Water Mantis Combat Operating System'
 ---

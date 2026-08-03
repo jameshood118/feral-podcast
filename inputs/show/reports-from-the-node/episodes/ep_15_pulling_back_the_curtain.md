@@ -4,7 +4,7 @@ date: '2026-08-03T12:00:00Z'
 duration: 00:27:44
 episode_number: 15
 file_size: '53560000'
-guid: 
+guid: c82a5f3b91d4
 season: 1
 title: 'Episode 15: Pulling Back the Curtain'
 ---
