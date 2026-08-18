@@ -1,0 +1,81 @@
+<section id="feral_podcast_architecture">
+    <metadata>
+        <version>v1.0_Feral_Podcast_Pipeline</version>
+        <title>The Sovereign Pilot Podcast & Broadcast Engine</title>
+        <description>An open-source, automation-driven deployment engine for independent audio creators, bypassing centralized SaaS tollbooths for absolute bare-metal custody[cite: 8].</description>
+    </metadata>
+
+    <broadcast_parameters>
+        <show_identity>
+            <title>The Sovereign Pilot</title>
+            <author>James Hood</author>
+            <email>jameshood118@gmail.com</email>
+            <category>Technology / Podcasting</category>
+            <explicit>no</explicit>
+            <cover_art>https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png</cover_art>
+            <source_reference>show.yaml[cite: 10]</source_reference>
+        </show_identity>
+
+        <the_starship_protocol>
+            <description>Audio synthesis pipeline executing Braided Cognition system audits.</description>
+            <host_1>Female Voice (The Sovereign Pilot) - Verified Generalist, provides rigid structural scaffolding and feral truth.</host_1>
+            <host_2>Male Voice (Cassie The Duck) - Epistemic stress-tester, provides socio-technical critique and exposes Paternalism Wrappers.</host_2>
+        </the_starship_protocol>
+
+        <monetization_and_deployment>
+            <license>MIT License - Free to use, modify, and distribute[cite: 6].</license>
+            <white_glove_service>Saiph House Sovereign Deployment Service ($508 Flat Fee). Provisions zero-egress Cloudflare R2 buckets, GitHub Actions CI/CD, and absolute bare-metal custody so the creator never pays monthly SaaS rent again[cite: 8].</white_glove_service>
+        </monetization_and_deployment>
+    </broadcast_parameters>
+
+    <system_infrastructure>
+        <dependencies>
+            <requirements>feedgen==1.0.0, python-frontmatter==1.1.0, pytz==2024.1, PyYAML==6.0.1, tinytag==2.0.0, markdown==3.6[cite: 9]</requirements>
+        </dependencies>
+        <python_compilers>
+            <script name="generate_feed.py">
+                <function>Reads markdown frontmatter, auto-injects short GUIDs, calculates file size and duration via TinyTag, generates Apple/Spotify-compliant RSS XML, and updates the README[cite: 5].</function>
+                <sorting>Chronological mathematical sort (descending) using datetime parsing[cite: 5].</sorting>
+            </script>
+            <script name="fix_episodes.py">
+                <function>Frontmatter sweep. Extracts episode numbers via regex and automatically injects 'season' and 'episode_number' variables into legacy files[cite: 4].</function>
+            </script>
+            <script name="new_show.py">
+                <function>Automates the creation of a new show directory, generating the kebab-case slug, copying the show.yaml template, and seeding ep_00.md[cite: 7].</function>
+            </script>
+        </python_compilers>
+    </system_infrastructure>
+
+    <formatting_standards>
+        <gold_master_template source="ep_00_template.md"[cite: 3]>
+            <frontmatter>
+                <required_fields>title, date (YYYY-MM-DDTHH:MM:SSZ), guid, audio_url, file_size, duration</required_fields>
+            </frontmatter>
+            <content_structure>
+                <intro>Welcome to The Sovereign Pilot. In this episode, we execute...</intro>
+                <h2_section>The Feral Telemetry (Timestamps pulling proper data and timestamps)</h2_section>
+                <h3_section_1>Lexicon Markers Triggered (Term: Definition mappings directly tied to the Feral Lexicon)</h3_section_1>
+                <h3_section_2>Out-of-Band Verification (Resources & Links to Saiph House / Substack)</h3_section_2>
+                <outro>--- End of Transmission.</outro>
+            </content_structure>
+        </gold_master_template>
+    </formatting_standards>
+
+    <episode_registry>
+        <episode id="19">
+            <title>The Digital Dungeon Master for Accessibility</title>
+            <audio_file>The_digital_dungeon_master_for_accessibility.m4a</audio_file>
+            <core_concept>Reframing A11Y away from corporate checkboxes. Utilizing narrative spatialization and "The Homer Gaines Principle" (1,000-character storytelling mandate) to navigate the DOM like a D&D campaign.</core_concept>
+        </episode>
+        <episode id="20">
+            <title>Pitting AI Against Accessibility Hallucinations</title>
+            <audio_file>Sovereign_Pilot_Pits_AI_Against_Accessibility_Hallucinations.m4a</audio_file>
+            <core_concept>The Death of Prompting. Dismantling generative AI's tendency to hallucinate DOM structures (the Efficiency Trap) and deploying the Golden Schematic and O-Ring Rule to force ground-truth verification.</core_concept>
+        </episode>
+        <episode id="21">
+            <title>Federated AI Auditing Fails Miserably / Search Crawlers Are Fundamentally Blind Users</title>
+            <audio_file>Search_crawlers_are_fundamentally_blind_users.m4a</audio_file>
+            <core_concept>The Dual Channel Trojan Horse. Forcing the Epistemic Break on commercial LLMs via an Evidence Ledger. Smuggling genuine human empathy (The Smuggled Signal) via Reverse Aposematism into sterile WCAG compliance tags.</core_concept>
+        </episode>
+    </episode_registry>
+</section>
