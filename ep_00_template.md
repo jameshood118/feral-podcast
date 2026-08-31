@@ -2,31 +2,24 @@
 
 ---
 title: "Episode X: [Your Feral Title Here]"
-
 date: "YYYY-MM-DDTHH:MM:SSZ"
-
 guid: "[INSERT_UUID_HERE]"
-
 audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/[YOUR_FILENAME.m4a]"
-
 file_size: "[SIZE_IN_BYTES]"
-
 duration: "HH:MM:SS"
-
+season: 1
+episode_number: X
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of [Core Topic] and dismantle the [Specific] efficiency trap.
 
 ## The Feral Telemetry (Timestamps)
 
-* **[00:00]** - Initialization and the Feral Boot Sequence
-* **[10:15]** - Deconstructing the Beige World Logic
-* **[25:30]** - System Audit and Motor Exit Points
+* **[00:00]** -[Details]
 
 ### Lexicon Markers Triggered
 
-* **[Lexicon Term 1]:** [Definition]
-* **[Lexicon Term 2]:** [Definition]
+* **[Lexicon Term]:** [Definitions]
 
 ### Out-of-Band Verification (Resources)
 
