@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Shingan_Water_Man
 date: '2026-08-02T09:28:59Z'
 duration: 00:42:05
 episode_number: 14
+episode_type: full
+explicit: 'no'
 file_size: '81267573'
 guid: b57c5897-22f4-48c9-8a16
+image: ''
 season: 1
 title: 'Episode 14: Shingan Water Mantis Combat Operating System'
 ---

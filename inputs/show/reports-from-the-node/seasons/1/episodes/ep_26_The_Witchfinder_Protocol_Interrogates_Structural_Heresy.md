@@ -1,12 +1,15 @@
 ---
-title: "Episode 26: The Witchfinder Protocol Interrogates Structural Heresy"
-date: "2026-08-31T08:00:00Z"
-guid: "hfdsj-d5f6-4f8b"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_Witchfinder_Protocol_Interrogates_Structural_Heresy.m4a"
-file_size: "92995888"
-duration: "00:48:09"
-season: 1
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_Witchfinder_Protocol_Interrogates_Structural_Heresy.m4a
+date: '2026-08-31T08:00:00Z'
+duration: 00:48:09
 episode_number: 26
+episode_type: full
+explicit: 'no'
+file_size: '92995888'
+guid: hfdsj-d5f6-4f8b
+image: ''
+season: 1
+title: 'Episode 26: The Witchfinder Protocol Interrogates Structural Heresy'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of zero-trust codebase auditing and dismantle the LLM code generation hallucination efficiency trap. 

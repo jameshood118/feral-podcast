@@ -1,12 +1,15 @@
 ---
-title: "Episode 23: Midnight Dispatch Reports from the Node"
-date: "2026-08-25T19:30:00Z"
-guid: "dYkKR7GhALQ6uKrocuJEit"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Ep_23_Midnight_Dispatch%20Reports%20from%20the%20Node.mp3"
-file_size: "15470395"
-duration: "00:18:30"
-season: 1
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Ep_23_Midnight_Dispatch%20Reports%20from%20the%20Node.mp3
+date: '2026-08-25T19:30:00Z'
+duration: 00:18:30
 episode_number: 23
+episode_type: full
+explicit: 'no'
+file_size: '15470395'
+guid: dYkKR7GhALQ6uKrocuJEit
+image: ''
+season: 1
+title: 'Episode 23: Midnight Dispatch Reports from the Node'
 ---
 
 Welcome to Reports from the Node. In this Special episode, From here on here...he shoots without a script, see if anything comes of it, instead of his old shit (ala rent). 

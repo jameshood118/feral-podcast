@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Building_a_sovere
 date: '2026-07-22T08:00:00Z'
 duration: 00:33:05
 episode_number: 8
+episode_type: full
+explicit: 'no'
 file_size: '63896397'
 guid: 8de23a69-b9f7-47a6-b1b3-4d6d087caad7
+image: ''
 season: 1
 title: 'Episode 8: Building a Sovereign AI Comic from Spite'
 ---

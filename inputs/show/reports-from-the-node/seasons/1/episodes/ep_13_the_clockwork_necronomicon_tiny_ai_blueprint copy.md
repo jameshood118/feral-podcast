@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_Clockwork_Nec
 date: '2026-07-22T08:00:00Z'
 duration: 00:22:01
 episode_number: 13
+episode_type: full
+explicit: 'no'
 file_size: '42517463'
 guid: 43ee572d-4938-48e2-948b-c7e8c8552ee3
+image: ''
 season: 1
 title: 'Episode 13: The Clockwork Necronomicon Tiny AI Blueprint'
 ---

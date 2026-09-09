@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Uncle_Entity_and_
 date: '2026-07-22T08:00:00Z'
 duration: 00:20:22
 episode_number: 9
+episode_type: full
+explicit: 'no'
 file_size: '39334665'
 guid: a0a51b61-cfc9-4f23-bdfa-8018b3b96707
+image: ''
 season: 1
 title: 'Episode 9: Uncle Entity and the Clockwork Necronomicon'
 ---

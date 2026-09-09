@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Reclaiming_your_h
 date: '2026-08-14T10:00:00Z'
 duration: '39:41'
 episode_number: 18
+episode_type: full
+explicit: 'no'
 file_size: 76660456
 guid: 0e02b2c3d4840
+image: ''
 season: 1
 title: 'Episode 18: Reclaiming your hardware from the Beige World'
 ---

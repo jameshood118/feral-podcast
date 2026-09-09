@@ -28,7 +28,7 @@ LOCAL_AUDIO_DIR = os.path.join(".", "audio_staging")
 # region SHOW RSS GENERATION
 def generate_rss_for_show(show_slug):
     show_input_dir = os.path.join(INPUT_ROOT, show_slug)
-    episodes_dir = os.path.join(show_input_dir, "episodes")
+    seasons_dir = os.path.join(show_input_dir, "seasons")
     show_yaml_path = os.path.join(show_input_dir, "show.yaml")
 
     if not os.path.exists(show_yaml_path):
@@ -39,8 +39,8 @@ def generate_rss_for_show(show_slug):
     with open(show_yaml_path, "r", encoding="utf-8") as f:
         show_meta = yaml.safe_load(f)
 
-    if not os.path.exists(episodes_dir):
-        print(f"Skipping '{show_slug}': Missing episodes dir at {episodes_dir}")
+    if not os.path.exists(seasons_dir):
+        print(f"Skipping '{show_slug}': Missing seasons directory at {seasons_dir}")
         return
         
     show_output_dir = os.path.join(OUTPUT_ROOT, show_slug)
@@ -78,31 +78,33 @@ def generate_rss_for_show(show_slug):
         fg.podcast.itunes_image(show_meta["image"])
     fg.podcast.itunes_type('episodic')
 
-    episode_files = [f for f in os.listdir(episodes_dir) if f.endswith('.md')]
-    
-    if not episode_files:
-        print(f"Skipping '{show_slug}': 'episodes' directory is empty.")
+    # Collect episodes across all season directories
+    episode_filepaths = []
+    for root, _, files in os.walk(seasons_dir):
+        for file in files:
+            if file.endswith('.md'):
+                episode_filepaths.append(os.path.join(root, file))
+
+    if not episode_filepaths:
+        print(f"Skipping '{show_slug}': No markdown files found in {seasons_dir}")
         return
 
     # THE CHRONOLOGICAL SORT PROTOCOL
     parsed_episodes = []
 
-    for filename in episode_files:
-        filepath = os.path.join(episodes_dir, filename)
-        
+    for filepath in episode_filepaths:
+        filename = os.path.basename(filepath)
         with open(filepath, "r", encoding="utf-8") as f:
             post = frontmatter.load(f)
             
         needs_save = False
 
-        # region 1. GUID INJECTION (Substack-Compliant Short GUID)
+        # region 1. GUID INJECTION (YouTube-Compliant 3-Chunk GUID)
         if 'guid' not in post.metadata:
-            # Substack Beige-World Fix: Use a 12-character truncated hex instead of a full 36-char UUID.
-            # Legacy files (Episodes 1-13) already have a 'guid' in frontmatter, so they are air-gapped from this change.
-            new_guid = uuid.uuid4().hex[:12] 
+            new_guid = "-".join(str(uuid.uuid4()).split("-")[:3]) 
             post.metadata['guid'] = new_guid
             needs_save = True
-            print(f"[{show_title}] Injected new short GUID ({new_guid}) into {filename}")
+            print(f"[{show_title}] Injected new 3-chunk GUID ({new_guid}) into {filename}")
         # endregion
 
         # region 2. FERAL TELEMETRY (TINYTAG)
@@ -182,6 +184,13 @@ def generate_rss_for_show(show_slug):
             fe.podcast.itunes_season(int(post.metadata['season']))
         if 'episode_number' in post.metadata:
             fe.podcast.itunes_episode(int(post.metadata['episode_number']))
+        if post.metadata.get('episode_type'):
+            fe.podcast.itunes_episode_type(str(post.metadata['episode_type']).lower())
+        if post.metadata.get('explicit'):
+            explicit_val = str(post.metadata['explicit']).lower()
+            fe.podcast.itunes_explicit("yes" if explicit_val in ["true", "yes", "y", "1"] else "no")
+        if post.metadata.get('image'):
+            fe.podcast.itunes_image(post.metadata['image'])
 
     output_file = os.path.join(show_output_dir, 'rss.xml')
     # Use explicit encoding for writing the XML file via feedgen if needed, but feedgen handles it.

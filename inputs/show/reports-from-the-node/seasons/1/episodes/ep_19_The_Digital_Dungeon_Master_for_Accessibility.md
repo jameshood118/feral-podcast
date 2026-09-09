@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_digital_dunge
 date: '2026-08-18T12:00:00Z'
 duration: 00:34:33
 episode_number: 19
+episode_type: full
+explicit: 'no'
 file_size: '67045578'
 guid: e7a4b8c1-9f2d-4b6a-b5e8-1c9d2a3f4e5b
+image: ''
 season: 1
 title: 'Episode 19: The Digital Dungeon Master for Accessibility'
 ---

@@ -1,12 +1,15 @@
 ---
-title: "Episode 22: SAFEHOOD AI for the Neurodivergent Pilot"
-date: "2026-08-23T19:00:00Z"
-guid: "f3a8b41e-92c7-4d9a-8b14"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/SAFEHOOD_AI_for_the_neurodivergent_pilot.m4a"
-file_size: "64814215"
-duration: "00:33:33"
-season: 1
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/SAFEHOOD_AI_for_the_neurodivergent_pilot.m4a
+date: '2026-08-23T19:00:00Z'
+duration: 00:33:33
 episode_number: 22
+episode_type: full
+explicit: 'no'
+file_size: '64814215'
+guid: f3a8b41e-92c7-4d9a-8b14
+image: ''
+season: 1
+title: 'Episode 22: SAFEHOOD AI for the Neurodivergent Pilot'
 ---
 
 Welcome to Reports from the Node. In this Special episode, we execute a transformative breakdown of [SAFEHOOD]. 

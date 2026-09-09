@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Search_crawlers_a
 date: '2026-08-18T12:00:00Z'
 duration: 00:33:24
 episode_number: 21
+episode_type: full
+explicit: 'no'
 file_size: '64389675'
 guid: a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d
+image: ''
 season: 1
 title: 'Episode 21: Federated AI Auditing Fails Miserably'
 ---

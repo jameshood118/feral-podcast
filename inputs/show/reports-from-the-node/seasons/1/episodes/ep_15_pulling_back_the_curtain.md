@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Inside_the_Leaked
 date: '2026-08-03T12:00:00Z'
 duration: 00:27:44
 episode_number: 15
+episode_type: full
+explicit: 'no'
 file_size: '53560000'
 guid: c82a5f3b91d4
+image: ''
 season: 1
 title: 'Episode 15: Pulling Back the Curtain'
 ---

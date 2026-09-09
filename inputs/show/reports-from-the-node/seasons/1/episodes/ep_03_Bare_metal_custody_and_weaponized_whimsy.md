@@ -1,12 +1,15 @@
 ---
-title: "Episode 3: Bare Metal Custody and Weaponized Whimsy"
-date: "2026-07-20T03:32:35Z"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Bare_metal_custody_and_weaponized_whimsy.m4a"
-file_size: "18400000"
-duration: "14:22"
-season: "1"
-episode_number: "3"
-guid: "f3a2b1c4-9d8e-4a7f-b6c5-8a9d1e2f3c4b"
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Bare_metal_custody_and_weaponized_whimsy.m4a
+date: '2026-07-20T03:32:35Z'
+duration: '14:22'
+episode_number: '3'
+episode_type: full
+explicit: 'no'
+file_size: '18400000'
+guid: f3a2b1c4-9d8e-4a7f-b6c5-8a9d1e2f3c4b
+image: ''
+season: 1
+title: 'Episode 3: Bare Metal Custody and Weaponized Whimsy'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of physical infrastructure control and dismantle the rent-seeking SaaS efficiency trap.

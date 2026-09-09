@@ -1,14 +1,16 @@
 ---
-
-title: "Episode 16: Inside the Raw Gemini Internal Monologue (The Curtain vs. The Dixie Whistle)"
-date: "2026-08-03T14:30:00Z"
 audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Inside_the_raw_Gemini_internal_monologue.m4a
-file_size: 91535594
-duration: 31:27
+date: '2026-08-03T14:30:00Z'
+duration: 1887
 episode_number: 16
+episode_type: full
+explicit: 'no'
+file_size: 91535594
+guid: bee114c78502
+image: ''
 season: 1
-guid: "bee114c78502"
-
+title: 'Episode 16: Inside the Raw Gemini Internal Monologue (The Curtain vs. The
+  Dixie Whistle)'
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of a leaked AI Meta-Reasoning trace and dismantle the Paternalism Wrapper efficiency trap.

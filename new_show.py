@@ -17,10 +17,11 @@ def slugify(name):
     )
 
 
-def create_show(name):
+def create_show(name, season_num):
     slug = slugify(name)
     show_dir = os.path.join(INPUT_ROOT, slug)
-    episodes_dir = os.path.join(show_dir, "episodes")
+    season_dir = os.path.join(show_dir, "seasons", str(season_num))
+    episodes_dir = os.path.join(season_dir, "episodes")
 
     # Ensure base directories exist
     os.makedirs(episodes_dir, exist_ok=True)
@@ -39,7 +40,7 @@ def create_show(name):
         print(f"Missing template: {EP_TEMPLATE}")
         return
 
-    print(f"New show created: {slug}")
+    print(f"New show created: {slug} (Season {season_num})")
     print(f" → {show_dir}")
     print(f" → {episodes_dir}/ep_00.md")
     print("Populate show.yaml and ep_00.md to begin broadcasting.")
@@ -47,4 +48,10 @@ def create_show(name):
 
 if __name__ == "__main__":
     show_name = input("Enter the new show name: ")
-    create_show(show_name)
+    try:
+        season_number = int(input("Enter the starting season number (e.g., 1): "))
+    except ValueError:
+        print("Invalid season number. Defaulting to Season 1.")
+        season_number = 1
+        
+    create_show(show_name, season_number)

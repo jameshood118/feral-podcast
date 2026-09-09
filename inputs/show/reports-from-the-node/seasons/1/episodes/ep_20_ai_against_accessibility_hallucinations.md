@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Sovereign_Pilot_P
 date: '2026-08-18T12:00:00Z'
 duration: 00:23:13
 episode_number: 20
+episode_type: full
+explicit: 'no'
 file_size: '44858746'
 guid: f8b9c2d3-1a4e-5f6b-c7d8-2e3f4a5b6c7d
+image: ''
 season: 1
 title: 'Episode 20: Pitting AI Against Accessibility Hallucinations'
 ---

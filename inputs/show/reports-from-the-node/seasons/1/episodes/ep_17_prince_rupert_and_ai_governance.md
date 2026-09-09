@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/The_Prince_Rupert
 date: '2026-08-04T05:40:00Z'
 duration: '52:42'
 episode_number: 17
+episode_type: full
+explicit: 'no'
 file_size: '14857216'
 guid: 0e02b2c3d479
+image: ''
 season: 1
 title: 'Episode 17: The Prince Rupert Shatter of AI Governance'
 ---

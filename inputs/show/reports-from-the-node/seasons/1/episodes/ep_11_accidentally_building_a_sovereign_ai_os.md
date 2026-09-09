@@ -3,8 +3,11 @@ audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Accidentally_buil
 date: '2026-07-22T08:00:00Z'
 duration: 00:47:24
 episode_number: 11
+episode_type: full
+explicit: 'no'
 file_size: '91535594'
 guid: 4281a6a0-8fc6-485a-8056-921c2a4cac3b
+image: ''
 season: 1
 title: 'Episode 11: Accidentally Building a Sovereign AI OS'
 ---
