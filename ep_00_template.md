@@ -7,7 +7,7 @@ guid: "[INSERT_UUID_HERE]"
 audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/[YOUR_FILENAME.m4a]"
 file_size: "[SIZE_IN_BYTES]"
 duration: "HH:MM:SS"
-season: 1
+season: X
 episode_number: X
 ---
 
