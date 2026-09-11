@@ -1,8 +1,8 @@
 ---
 title: "Episode 06: The Acoustic Substrate"
 date: "2026-09-10T19:03:00Z"
-guid: "4f8a2b-9c3d1e-7a6b5c"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/ep_06_the_acoustic_substrate.m4a"
+guid: "4f8a2b-9c3d1e-8b7c6d"
+audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Acoustic_Scaffolding_for_the_Warrior_Genotype.m4a"
 file_size: "59818416"
 duration: "00:54:18"
 season: 2
