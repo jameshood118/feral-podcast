@@ -7,7 +7,7 @@ episode_number: 1
 episode_type: full
 explicit: false
 file_size: '53834674'
-guid: '[INSERT_UUID_HERE]'
+guid: b6664fdb-25d8-4c91
 image: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png
 keywords:
 - SAFEHOOD
