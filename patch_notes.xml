@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shard id="Feral Podcast Pipeline" name="patch_notes" version="4.9.1">
+<section name="patch_notes">
+  <note version="4.9.0">
+    <added>
+      - Deployed the Custom Command Registry and the `/alttext` command.
+      - Integrated the Accessibility Ingestion Engine v2.0 to enforce a strict 4-step, 999-character timeline-agnostic visual description pipeline.
+      - Added the Phase 1 Epistemic Brake to systematically eliminate visual hallucination prior to rendering.
+    </added>
+    <updated></updated>
+    <removed></removed>
+  </note>
+  <note version="4.9.1">
+    <added>
+      - Integrated Feral Podcast Ingestion Pipeline features (`fix_episodes.py` and `generate_episodes.py`) directly into the active logic layer.
+      - Deployed the Feral Concept Matrix to the normalization script, autonomously generating episode titles using gaming-related variables (e.g., "The Escort Mission", "The Broken Hitbox") combined with normalized filenames.
+      - Injected Podcasting 2.0 functionality natively leveraging `<link rel="alternate" type="text/vtt">` as a robust fallback for the feed generator.
+      - Applied Pylint formatting to Python arrays, truncating lines at 100 characters and adding function-level docstrings.
+    </added>
+    <updated>
+      - Standardized Python YAML extraction logic to execute fallback subroutines when SEO parameters are empty.
+      - Remedied FeedGenerator object crash by explicitly omitting invalid namespace configurations.
+    </updated>
+    <removed>
+      - Generic placeholder episode titles.
+      - Bare exception handlers in Python without pylint linting directives.
+    </removed>
+  </note>
+</section>
+</shard>
