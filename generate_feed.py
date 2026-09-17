@@ -1,6 +1,6 @@
 """
 Feral Podcast RSS Generator (Multi-Show / Sovereign Braid)
-Show.yaml + Auto-README + Mutagen Telemetry + UTF-8 Hardened
+Show.yaml + Auto-README + Mutagen Telemetry + UTF-8 Hardened + Podcasting 2.0
 """
 
 # region IMPORTS & GLOBALS
@@ -17,7 +17,6 @@ import markdown
 # endregion
 
 # region CONSTANTS
-
 INPUT_ROOT = os.path.join("inputs", "show")
 OUTPUT_ROOT = os.path.join("outputs", "show")
 README_PATH = "README.md"
@@ -27,6 +26,10 @@ LOCAL_AUDIO_DIR = os.path.join(".", "audio_staging")
 
 # region SHOW RSS GENERATION
 def generate_rss_for_show(show_slug):
+    """
+    Generate an RSS feed for a specific show slug by parsing local Markdown
+    files and combining them with the root show.yaml configuration.
+    """
     show_input_dir = os.path.join(INPUT_ROOT, show_slug)
     seasons_dir = os.path.join(show_input_dir, "seasons")
     show_yaml_path = os.path.join(show_input_dir, "show.yaml")
@@ -42,7 +45,7 @@ def generate_rss_for_show(show_slug):
     if not os.path.exists(seasons_dir):
         print(f"Skipping '{show_slug}': Missing seasons directory at {seasons_dir}")
         return
-        
+
     show_output_dir = os.path.join(OUTPUT_ROOT, show_slug)
     os.makedirs(show_output_dir, exist_ok=True)
 
@@ -55,9 +58,9 @@ def generate_rss_for_show(show_slug):
     fg.link(href=f"{BASE_URL}/{show_slug}/rss.xml", rel="self", type="application/rss+xml")
     fg.language('en')
 
-# pylint: disable=no-member
+    # pylint: disable=no-member
     fg.podcast.itunes_author(show_meta.get("author", "James Hood"))
-    
+
     # FIX 1: Feedgen requires a dictionary for Apple categories
     cat = show_meta.get("category", "Technology")
     subcat = show_meta.get("subcategory")
@@ -66,14 +69,16 @@ def generate_rss_for_show(show_slug):
     else:
         fg.podcast.itunes_category({'cat': cat})
 
-    # FIX 2: Bypassing feedgen's internal validation trap. 
-    # Feedgen strictly requires 'yes', 'no', or 'clean', even if W3C complains.
+    # FIX 2: Bypassing feedgen's internal validation trap.
     explicit_raw = str(show_meta.get("explicit", "no")).lower()
     explicit_clean = "yes" if explicit_raw in ["true", "yes", "y", "1"] else "no"
     fg.podcast.itunes_explicit(explicit_clean)
-    
-    fg.podcast.itunes_owner(email=show_meta.get("email", "jameshood118@gmail.com"), name=show_meta.get("author", "James Hood"))
-    
+
+    fg.podcast.itunes_owner(
+        email=show_meta.get("email", "jameshood118@gmail.com"),
+        name=show_meta.get("author", "James Hood")
+    )
+
     if "image" in show_meta:
         fg.podcast.itunes_image(show_meta["image"])
     fg.podcast.itunes_type('episodic')
@@ -96,12 +101,12 @@ def generate_rss_for_show(show_slug):
         filename = os.path.basename(filepath)
         with open(filepath, "r", encoding="utf-8") as f:
             post = frontmatter.load(f)
-            
+
         needs_save = False
 
         # region 1. GUID INJECTION (YouTube-Compliant 3-Chunk GUID)
         if 'guid' not in post.metadata:
-            new_guid = "-".join(str(uuid.uuid4()).split("-")[:3]) 
+            new_guid = "-".join(str(uuid.uuid4()).split("-")[:3])
             post.metadata['guid'] = new_guid
             needs_save = True
             print(f"[{show_title}] Injected new 3-chunk GUID ({new_guid}) into {filename}")
@@ -110,13 +115,17 @@ def generate_rss_for_show(show_slug):
         # region 2. FERAL TELEMETRY (TINYTAG)
         current_size = str(post.metadata.get('file_size', ''))
         current_duration = str(post.metadata.get('duration', ''))
+        invalid_durations = ['[HH:MM:SS]', '[DURATION]', '00:00:00']
 
-        if current_size == '[SIZE_IN_BYTES]' or current_duration in ['[HH:MM:SS]', '[DURATION]', '00:00:00'] or not current_size or not current_duration:
+        if current_size == '[SIZE_IN_BYTES]' or current_duration in invalid_durations \
+           or not current_size or not current_duration:
+
             audio_url = post.metadata.get('audio_url', '')
             audio_filename = urllib.parse.unquote(audio_url.split('/')[-1])
             local_audio_path = os.path.join(LOCAL_AUDIO_DIR, audio_filename)
 
             if os.path.exists(local_audio_path):
+                # pylint: disable=broad-exception-caught
                 try:
                     # Inject Byte Size
                     size_bytes = os.path.getsize(local_audio_path)
@@ -127,22 +136,22 @@ def generate_rss_for_show(show_slug):
                     if tag.duration is not None and tag.duration > 0:
                         duration_seconds = int(tag.duration)
                         formatted_duration = str(timedelta(seconds=duration_seconds))
-                        
+
                         if len(formatted_duration.split(':')) == 2:
                             formatted_duration = f"00:{formatted_duration}"
-                        elif len(formatted_duration) == 7: 
+                        elif len(formatted_duration) == 7:
                             formatted_duration = f"0{formatted_duration}"
-                        
+
                         post.metadata['duration'] = formatted_duration
                         needs_save = True
-                        print(f"[{show_title}] Injected Size ({size_bytes}) & Duration ({formatted_duration}) into {filename}")
+                        print(f"[{show_title}] Injected Size ({size_bytes}) "
+                              f"& Duration ({formatted_duration}) into {filename}")
                     else:
                         print(f"[WARNING] TinyTag could not calculate duration for {audio_filename}")
                 except Exception as e:
                     print(f"[WARNING] TinyTag failed to parse {audio_filename}: {e}")
-            else:
-                pass 
         # endregion
+
         if needs_save:
             with open(filepath, 'w', encoding="utf-8") as f:
                 f.write(frontmatter.dumps(post))
@@ -150,7 +159,7 @@ def generate_rss_for_show(show_slug):
         # Parse the date so we can sort mathematically
         pub_date = datetime.strptime(post.metadata['date'], "%Y-%m-%dT%H:%M:%SZ")
         pub_date = pub_date.replace(tzinfo=pytz.UTC)
-        
+
         # Store in memory
         parsed_episodes.append({
             'post': post,
@@ -166,18 +175,22 @@ def generate_rss_for_show(show_slug):
         fe = fg.add_entry()
         fe.id(post.metadata['guid'])
         fe.title(post.metadata['title'])
+
         # region 3. THE TRANSLATION LAYER
         # Convert raw Markdown content into clean HTML for the RSS feed
         html_description = markdown.markdown(post.content)
-        
+
         # Feed the HTML into the standard description tag
         fe.description(html_description)
-        
-        # Feed the HTML into the <content:encoded> tag (Crucial for Apple Podcasts & Substack)
+
+        # Feed HTML into the <content:encoded> tag (Crucial for Apple/Substack)
         fe.content(html_description)
         # endregion
+
         fe.pubDate(ep['pub_date'])
-        fe.enclosure(post.metadata['audio_url'], str(post.metadata.get('file_size', '0')), 'audio/x-m4a')
+        fe.enclosure(post.metadata['audio_url'],
+                     str(post.metadata.get('file_size', '0')),
+                     'audio/x-m4a')
         fe.podcast.itunes_duration(post.metadata.get('duration', '00:00:00'))
 
         if 'season' in post.metadata:
@@ -186,25 +199,41 @@ def generate_rss_for_show(show_slug):
             fe.podcast.itunes_episode(int(post.metadata['episode_number']))
         if post.metadata.get('episode_type'):
             fe.podcast.itunes_episode_type(str(post.metadata['episode_type']).lower())
+
         if post.metadata.get('explicit'):
             explicit_val = str(post.metadata['explicit']).lower()
             fe.podcast.itunes_explicit("yes" if explicit_val in ["true", "yes", "y", "1"] else "no")
+
         if post.metadata.get('image'):
             fe.podcast.itunes_image(post.metadata['image'])
 
+        # SEO & Podcasting 2.0 Injections
+        if post.metadata.get('subtitle'):
+            fe.podcast.itunes_subtitle(post.metadata['subtitle'])
+        if post.metadata.get('summary'):
+            fe.podcast.itunes_summary(post.metadata['summary'])
+
+        transcript_url = post.metadata.get('transcript_url')
+        if transcript_url and transcript_url != '':
+            # Utilizing feedgen's native link tag mapping as the alternate transcript container
+            fe.link(href=transcript_url, rel="alternate", type="text/vtt", title="Transcript")
+
     output_file = os.path.join(show_output_dir, 'rss.xml')
-    # Use explicit encoding for writing the XML file via feedgen if needed, but feedgen handles it.
     fg.rss_file(output_file)
     print(f"[{show_title}] RSS Feed generated successfully at {output_file}.")
 # endregion
 
 # region README UPDATING
 def update_readme_with_feeds():
+    """
+    Update the primary README.md with the generated RSS feed URLs by scanning
+    between the predefined HTML comment blocks.
+    """
     if not os.path.exists(INPUT_ROOT):
         return
 
     shows = [d for d in os.listdir(INPUT_ROOT) if os.path.isdir(os.path.join(INPUT_ROOT, d))]
-    
+
     lines = []
     for slug in shows:
         show_yaml_path = os.path.join(INPUT_ROOT, slug, "show.yaml")
@@ -231,12 +260,14 @@ def update_readme_with_feeds():
 
     # FERAL SAFEGUARD 1: Check the Python Script Variables
     if not start or not end:
-        print("[SYSTEM ERROR] Python script misconfiguration: The 'start' or 'end' marker variables inside generate_feed.py are blank. Fix the script.")
+        print("[SYSTEM ERROR] Python script misconfiguration: The 'start' or 'end' "
+              "marker variables inside generate_feed.py are blank. Fix the script.")
         return
 
     # FERAL SAFEGUARD 2: Check the README.md File Contents
     if start not in content or end not in content:
-        print(f"[SYSTEM WARNING] README.md is missing the specific HTML comments ({start} and/or {end}). Cannot auto-inject feeds.")
+        print(f"[SYSTEM WARNING] README.md is missing the specific HTML comments "
+              f"({start} and/or {end}). Cannot auto-inject feeds.")
         return
 
     before = content.split(start)[0]
@@ -252,19 +283,23 @@ def update_readme_with_feeds():
 
 # region MAIN EXECUTION
 def scan_and_generate():
+    """
+    Scan the active show directory and execute the RSS generation pipeline 
+    across all detected sub-directories.
+    """
     if not os.path.exists(INPUT_ROOT):
         print(f"Input directory '{INPUT_ROOT}' does not exist.")
         return
 
     shows = [d for d in os.listdir(INPUT_ROOT) if os.path.isdir(os.path.join(INPUT_ROOT, d))]
-    
+
     if not shows:
         print("No show directories found under 'inputs/show/'.")
         return
 
     for show_slug in shows:
         generate_rss_for_show(show_slug)
-        
+
     update_readme_with_feeds()
 
 if __name__ == "__main__":
