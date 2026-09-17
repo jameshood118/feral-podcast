@@ -9,7 +9,11 @@ file_size: '15470395'
 guid: dYkKR7GhALQ6uKrocuJEit
 image: ''
 season: 1
-title: 'Episode 23: Midnight Dispatch Reports from the Node'
+seo_description: ''
+subtitle: ''
+title: 'Episode 23: The Fetch Quest and the Ep 23 Midnight Dispatch Reports From The
+  Node of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Ep_23_Midnight_Dispatch%20Reports%20from%20the%20Node.vtt
 ---
 
 Welcome to Reports from the Node. In this Special episode, From here on here...he shoots without a script, see if anything comes of it, instead of his old shit (ala rent). 

@@ -9,7 +9,11 @@ file_size: '43707939'
 guid: 1129b4d3-17db-4f07-83b1-eb232015d64a
 image: ''
 season: 1
-title: 'Episode 12: Military-Grade Surveillance for a Tuxedo Cat'
+seo_description: ''
+subtitle: ''
+title: 'Episode 12: The Save Point and the Ep 12 Military Grade Surveillance For A
+  Tuxedo Cat of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Military_grade_surveillance_for_a_tuxedo_cat.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of homelab security and dismantle the "consumer-grade" efficiency trap. We explore why trusting off-the-shelf SaaS cameras is a voluntary wiretap, and how over-engineering an air-gapped RTSP sensory array for a tuxedo cat perfectly demonstrates feral architecture in action.

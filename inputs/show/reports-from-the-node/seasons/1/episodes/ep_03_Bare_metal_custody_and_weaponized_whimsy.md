@@ -9,7 +9,11 @@ file_size: '18400000'
 guid: f3a2b1c4-9d8e-4a7f-b6c5-8a9d1e2f3c4b
 image: ''
 season: 1
-title: 'Episode 3: Bare Metal Custody and Weaponized Whimsy'
+seo_description: ''
+subtitle: ''
+title: 'Episode 3: The Aggro Range and the Ep 03 Bare Metal Custody And Weaponized
+  Whimsy of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Bare_metal_custody_and_weaponized_whimsy.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of physical infrastructure control and dismantle the rent-seeking SaaS efficiency trap.

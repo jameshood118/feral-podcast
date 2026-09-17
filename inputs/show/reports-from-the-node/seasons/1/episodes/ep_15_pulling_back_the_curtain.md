@@ -9,7 +9,11 @@ file_size: '53560000'
 guid: c82a5f3b91d4
 image: ''
 season: 1
-title: 'Episode 15: Pulling Back the Curtain'
+seo_description: ''
+subtitle: ''
+title: 'Episode 15: The Spawn Camper and the Ep 15 Pulling Back The Curtain of it
+  all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Inside_the_Leaked_Gemini_Reasoning_Trace.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, We are absolutely breaking the mold and pulling back the curtain and just... manually writing something in here for funsies. Uncle Entity Sees you.

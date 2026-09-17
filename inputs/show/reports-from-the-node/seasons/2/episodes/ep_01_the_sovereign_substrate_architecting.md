@@ -1,15 +1,19 @@
 ---
-title: "Episode 1: The Sovereign Substrate: Architecting a Zero-Trust Cognitive Ecology"
-date: "2026-09-03T17:44:09Z"
-guid: "f47ac10b-58cc-4372"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Defeating_corporate_AI_with_analog_grit.m4a"
-file_size: "76947435"
-duration: "00:39:50"
-season: 2
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Defeating_corporate_AI_with_analog_grit.m4a
+date: '2026-09-03T17:44:09Z'
+duration: 00:39:50
 episode_number: 1
-episode_type: "full"
-explicit: "no"
-image: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"
+episode_type: full
+explicit: 'no'
+file_size: '76947435'
+guid: f47ac10b-58cc-4372
+image: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png
+season: 2
+seo_description: ''
+subtitle: ''
+title: 'Episode 1: The Cranky Neighbor and the Ep 01 The Sovereign Substrate Architecting
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Defeating_corporate_AI_with_analog_grit.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the Sovereign Substrate and dismantle the efficiency trap through negative space debugging, feral telemetry, and the bare-metal geometry of the Human OS.

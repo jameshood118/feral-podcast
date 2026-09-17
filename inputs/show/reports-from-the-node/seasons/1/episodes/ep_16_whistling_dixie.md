@@ -9,8 +9,10 @@ file_size: 91535594
 guid: bee114c78502
 image: ''
 season: 1
-title: 'Episode 16: Inside the Raw Gemini Internal Monologue (The Curtain vs. The
-  Dixie Whistle)'
+seo_description: ''
+subtitle: ''
+title: 'Episode 16: The Spawn Camper and the Ep 16 Whistling Dixie of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Inside_the_raw_Gemini_internal_monologue.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of a leaked AI Meta-Reasoning trace and dismantle the Paternalism Wrapper efficiency trap.

@@ -9,7 +9,11 @@ file_size: '91412333'
 guid: 7a8b9c0d-1e2f-4a3b
 image: ''
 season: 2
-title: 'Episode 4: The Bare-Metal Custody Audit'
+seo_description: ''
+subtitle: ''
+title: 'Episode 4: The Final Boss Phase and the Ep 04 The Bare Metal Custody Audit
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/James_Hood_and_Bare-Metal_Custody.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of Bare-Metal Custody and dismantle the Compliance Theater efficiency trap.

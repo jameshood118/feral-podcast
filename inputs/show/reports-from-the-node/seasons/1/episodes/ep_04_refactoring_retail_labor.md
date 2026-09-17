@@ -9,7 +9,11 @@ file_size: '80656263'
 guid: 905c3ace-9c9f-457f-9147-819b8af1e3f1
 image: ''
 season: 1
-title: 'Episode 4: Refactoring Retail Labor for Corporate Compliance'
+seo_description: ''
+subtitle: ''
+title: 'Episode 4: The Depleted Stamina Bar and the Ep 04 Refactoring Retail Labor
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Refactoring_retail_labor_for_corporate_compliance.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of retail labor and dismantle the Beige World efficiency trap that categorizes highly skilled operators as "unskilled labor." We explore how an elite compliance, asset protection, and verification engine is systematically misclassified by algorithmic gatekeepers.

@@ -9,7 +9,11 @@ file_size: '44858746'
 guid: f8b9c2d3-1a4e-5f6b-c7d8-2e3f4a5b6c7d
 image: ''
 season: 1
-title: 'Episode 20: Pitting AI Against Accessibility Hallucinations'
+seo_description: ''
+subtitle: ''
+title: 'Episode 20: The Depleted Stamina Bar and the Ep 20 Ai Against Accessibility
+  Hallucinations of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Sovereign_Pilot_Pits_AI_Against_Accessibility_Hallucinations.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a Braided Cognition system audit on the "Death of Prompting" and the battle against generative AI hallucinations in web accessibility. The Female Voice (The Sovereign Pilot) and Cassie The Duck deconstruct how stateless LLMs fall into the Efficiency Trap—hallucinating DOM structures and ARIA labels to provide a frictionless "Yes" rather than verifying ground truth. We dismantle "Vibe Coding" and deploy the Golden Schematic, proving that true AI alignment isn't about asking the machine nicely; it's about building a high-friction environment the AI cannot escape.

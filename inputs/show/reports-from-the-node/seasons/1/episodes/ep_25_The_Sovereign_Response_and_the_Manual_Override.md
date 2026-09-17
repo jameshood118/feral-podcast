@@ -9,7 +9,11 @@ file_size: '70030294'
 guid: c94e82b3-d5f6-4f8b
 image: ''
 season: 1
-title: 'Episode 25: The Sovereign Response and the Manual Override'
+seo_description: ''
+subtitle: ''
+title: 'Episode 25: The Broken Hitbox and the Ep 25 The Sovereign Response And The
+  Manual Override of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/ADHD_is_an_overclocked_survival_mechanism.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the biological deployment of the Sovereign Response and dismantle the Paternalism Wrapper efficiency trap.

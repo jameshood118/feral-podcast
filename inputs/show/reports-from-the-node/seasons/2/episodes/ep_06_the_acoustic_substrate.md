@@ -1,15 +1,19 @@
 ---
-title: "Episode 06: The Acoustic Substrate"
-date: "2026-09-10T19:03:00Z"
-guid: "4f8a2b-9c3d1e-8b7c6d"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Acoustic_Scaffolding_for_the_Warrior_Genotype.m4a"
-file_size: "59818416"
-duration: "00:54:18"
-season: 2
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Acoustic_Scaffolding_for_the_Warrior_Genotype.m4a
+date: '2026-09-10T19:03:00Z'
+duration: 00:54:18
 episode_number: 6
-image: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"
 episode_type: full
 explicit: 'no'
+file_size: '59818416'
+guid: 4f8a2b-9c3d1e-8b7c6d
+image: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png
+season: 2
+seo_description: ''
+subtitle: ''
+title: 'Episode 6: The Unskippable Cutscene and the Ep 06 The Acoustic Substrate of
+  it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Acoustic_Scaffolding_for_the_Warrior_Genotype.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the **Acoustic Substrate** and dismantle the **Algorithmic Sanding (Nursery Rhyme)** efficiency trap.

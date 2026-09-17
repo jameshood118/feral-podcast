@@ -9,7 +9,11 @@ file_size: '64814215'
 guid: f3a8b41e-92c7-4d9a-8b14
 image: ''
 season: 1
-title: 'Episode 22: SAFEHOOD AI for the Neurodivergent Pilot'
+seo_description: ''
+subtitle: ''
+title: 'Episode 22: The Fog of War and the Ep 22 Safehood Ai For The Neurodivergent
+  Pilot of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/SAFEHOOD_AI_for_the_neurodivergent_pilot.vtt
 ---
 
 Welcome to Reports from the Node. In this Special episode, we execute a transformative breakdown of [SAFEHOOD]. 

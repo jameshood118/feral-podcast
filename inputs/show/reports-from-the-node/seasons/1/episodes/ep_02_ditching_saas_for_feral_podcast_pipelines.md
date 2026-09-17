@@ -9,7 +9,11 @@ file_size: '18400000'
 guid: c18f1a18-5a4c-5f8e-b5c4-4b52c6f1a8c2
 image: ''
 season: 1
-title: 'Episode 2: Ditching Saas for Feral Podcast Pipelines'
+seo_description: ''
+subtitle: ''
+title: 'Episode 2: The Fog of War and the Ep 02 Ditching Saas For Feral Podcast Pipelines
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Ditching_SaaS_for_Feral_Podcast_Pipelines.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of digital independence and dismantle the SaaS subscription model's efficiency trap.

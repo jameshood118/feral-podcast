@@ -9,7 +9,11 @@ file_size: '42517463'
 guid: 43ee572d-4938-48e2-948b-c7e8c8552ee3
 image: ''
 season: 1
-title: 'Episode 13: The Clockwork Necronomicon Tiny AI Blueprint'
+seo_description: ''
+subtitle: ''
+title: 'Episode 13: The Fog of War and the Ep 13 The Clockwork Necronomicon Tiny Ai
+  Blueprint Copy of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/The_Clockwork_Necronomicon_Tiny_AI_Blueprint.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of local intelligence and dismantle the "compute scale" efficiency trap. We explore the structural PyTorch blueprint for training a 120M parameter decoder-only transformer, and why a tiny, hyper-specific model beats a massive, generic one.

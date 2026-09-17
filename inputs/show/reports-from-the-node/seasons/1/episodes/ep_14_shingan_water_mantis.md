@@ -9,7 +9,10 @@ file_size: '81267573'
 guid: b57c5897-22f4-48c9-8a16
 image: ''
 season: 1
-title: 'Episode 14: Shingan Water Mantis Combat Operating System'
+seo_description: ''
+subtitle: ''
+title: 'Episode 14: The Broken Hitbox and the Ep 14 Shingan Water Mantis of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Shingan_Water_Mantis_Combat_Operating_System.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the Shingan Water Mantis Combat Operating System and dismantle the rigidity of classical form-based martial arts efficiency traps.

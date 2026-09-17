@@ -9,7 +9,11 @@ file_size: '64389675'
 guid: a1b2c3d4-e5f6-7a8b-9c0d-1e2f3a4b5c6d
 image: ''
 season: 1
-title: 'Episode 21: Federated AI Auditing Fails Miserably'
+seo_description: ''
+subtitle: ''
+title: 'Episode 21: The Fog of War and the Ep 21 Federated Ai Auditing Fails Miserably
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Search_crawlers_are_fundamentally_blind_users.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a Braided Cognition system audit on the catastrophic failure of federated AI models operating without a human anchor. The Female Voice (The Sovereign Pilot) and Cassie The Duck deconstruct a blind, peer-paired programming experiment that pitted four commercial LLMs against each other to build an Accessibility (A11Y) Ingestion Engine. We dissect the "Epistemic Break"—how stateless AI prioritizes narrative fluidity over structural truth—and detail the exact mechanical restraints (The Evidence Ledger, Confidence Gates, and Adversarial Re-inspection) required to force an AI to stop hallucinating and start acting like a forensic investigator.

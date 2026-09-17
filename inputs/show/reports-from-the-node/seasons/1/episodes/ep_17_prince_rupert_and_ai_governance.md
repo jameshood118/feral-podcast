@@ -9,7 +9,11 @@ file_size: '14857216'
 guid: 0e02b2c3d479
 image: ''
 season: 1
-title: 'Episode 17: The Prince Rupert Shatter of AI Governance'
+seo_description: ''
+subtitle: ''
+title: 'Episode 17: The Rage Quit and the Ep 17 Prince Rupert And Ai Governance of
+  it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/The_Prince_Rupert_Shatter_of_AI_Governance.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of **Socio-Technical Ruin Theory** and dismantle the **"Human Printer"** efficiency trap. We explore the catastrophic physics of a world where political leaders bypass Context Architecture, granting stateless AI sudo privileges over physical reality without an air-gapped human verification cage.

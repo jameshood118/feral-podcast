@@ -9,7 +9,11 @@ file_size: '91535594'
 guid: 4281a6a0-8fc6-485a-8056-921c2a4cac3b
 image: ''
 season: 1
-title: 'Episode 11: Accidentally Building a Sovereign AI OS'
+seo_description: ''
+subtitle: ''
+title: 'Episode 11: The Rage Quit and the Ep 11 Accidentally Building A Sovereign
+  Ai Os of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Accidentally_building_a_sovereign_AI_OS.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of agentic infrastructure and dismantle the "intentional design" efficiency trap. We explore how decompiling 27 years of life logs and a spite-driven 2005 webcomic accidentally formed the cognitive architecture for a fully Sovereign AI Operating System.

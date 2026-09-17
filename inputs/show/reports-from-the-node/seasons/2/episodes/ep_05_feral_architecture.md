@@ -6,10 +6,13 @@ episode_number: 5
 episode_type: full
 explicit: 'no'
 file_size: '104753221'
-guid: '7a8b9c0d-1e2f-5a3g'
-image: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"
+guid: 7a8b9c0d-1e2f-5a3g
+image: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png
 season: 2
-title: 'Episode 5: The Unified Master Compiler & Mode-Locked Governance'
+seo_description: ''
+subtitle: ''
+title: 'Episode 5: The Save Point and the Ep 05 Feral Architecture of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Feral_Architecture_and_the_Dirt_Road_Protocol.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the Unified Master Compiler v4.8.6 and dismantle the Semantic Fog efficiency trap.

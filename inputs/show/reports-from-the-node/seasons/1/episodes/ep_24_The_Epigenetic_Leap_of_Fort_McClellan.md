@@ -9,7 +9,11 @@ file_size: '50635442'
 guid: b83f91a2-c4d5-4e7a
 image: ''
 season: 1
-title: 'Episode 24: The Epigenetic Leap of Fort McClellan'
+seo_description: ''
+subtitle: ''
+title: 'Episode 24: The Save Point and the Ep 24 The Epigenetic Leap Of Fort Mcclellan
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/How_Fort_McClellan_Toxins_Rewrote_Human_DNA.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the epigenetic rewrite of the rs4680 GG genotype caused by toxic exposure at Fort McClellan, and dismantle the bureaucratic efficiency trap that forces veterans to bear the burden of proof while pathologizing their resulting survival architecture as a clinical disorder

@@ -1,15 +1,19 @@
 ---
-title: "Episode 2: The Latent Space Loophole: Visualizing the Feral Goblin"
-date: "2026-09-05T12:00:00Z"
-guid: "9a2636d9-b906-4ec1"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Is_This_AI_Warcraft_Art_Legal.m4a"
-file_size: "61958630"
-duration: "00:32:05"
-season: 2
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/Is_This_AI_Warcraft_Art_Legal.m4a
+date: '2026-09-05T12:00:00Z'
+duration: 00:32:05
 episode_number: 2
-episode_type: "full"
-explicit: "no"
-image: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png"
+episode_type: full
+explicit: 'no'
+file_size: '61958630'
+guid: 9a2636d9-b906-4ec1
+image: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/reports_from_the_node.png
+season: 2
+seo_description: ''
+subtitle: ''
+title: 'Episode 2: The Broken Hitbox and the Ep 02 The Latent Space Loophole Visualizing
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Is_This_AI_Warcraft_Art_Legal.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of Geometric RAG and dismantle the flat vector ingestion efficiency trap.

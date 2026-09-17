@@ -9,7 +9,11 @@ file_size: '63896397'
 guid: 8de23a69-b9f7-47a6-b1b3-4d6d087caad7
 image: ''
 season: 1
-title: 'Episode 8: Building a Sovereign AI Comic from Spite'
+seo_description: ''
+subtitle: ''
+title: 'Episode 8: The Rage Quit and the Ep 08 Building A Sovereign Ai Comic of it
+  all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Building_a_sovereign_AI_comic_from_spite.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of creative stubbornness and dismantle the "talent" efficiency trap. We explore the 2005 origins of a failed HTML/CSS webcomic and how the sheer spite of not being able to draw eventually birthed a closed-loop generative AI architecture.

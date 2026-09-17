@@ -9,7 +9,11 @@ file_size: '67045578'
 guid: e7a4b8c1-9f2d-4b6a-b5e8-1c9d2a3f4e5b
 image: ''
 season: 1
-title: 'Episode 19: The Digital Dungeon Master for Accessibility'
+seo_description: ''
+subtitle: ''
+title: 'Episode 19: The Fog of War and the Ep 19 The Digital Dungeon Master For Accessibility
+  of it all'
+transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/The_digital_dungeon_master_for_accessibility.vtt
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a Braided Cognition system audit on Web Accessibility (A11Y) by reframing the developer as a Digital Dungeon Master. The Female Voice (Structural Scaffolding) and Cassie The Duck (Epistemic Stress-Tester) evaluate how screen readers and users navigate the DOM not as a static document, but as a dynamic, high-friction environment. We dismantle "Compliance Theater" and deploy the Feral Accessibility Drone to ensure that marginalized users aren't left rolling with disadvantage through hostile legacy code.
