@@ -1,35 +1,15 @@
 """
 Feral Podcast Metadata Normalizer
-Injects SEO parameters, Podcasting 2.0 constraints, and dynamic Feral Titles.
+Injects SEO parameters and Podcasting 2.0 constraints.
 """
 
 import os
 import re
-import random
 import frontmatter
 
 # Define root show directory and the new seasons container
 show_dir = os.path.join("inputs", "show", "reports-from-the-node")
 seasons_dir = os.path.join(show_dir, "seasons")
-
-# The Feral Concept Matrix for Autonomous Title Generation
-FERAL_CONCEPTS = [
-    "The Cranky Neighbor",
-    "The Escort Mission",
-    "The Over-Encumbered Inventory",
-    "The Unskippable Cutscene",
-    "The Aggro Range",
-    "The Final Boss Phase",
-    "The Fetch Quest",
-    "The Save Point",
-    "The Dialogue Tree",
-    "The Broken Hitbox",
-    "The Rage Quit",
-    "The Fog of War",
-    "The Depleted Stamina Bar",
-    "The Missing Checkpoint",
-    "The Spawn Camper"
-]
 
 if not os.path.exists(seasons_dir):
     print(f"[ERROR] Directory not found: {seasons_dir}")
@@ -72,22 +52,6 @@ else:
                         season_num = int(path_parts[seasons_idx + 1])
                     except ValueError:
                         pass
-
-            # --- TITLE OVERRIDE: FERAL GAMING CONCEPTS ---
-            clean_filename = os.path.splitext(filename)[0].replace('-', ' ').replace('_', ' ').title()
-            clean_filename = re.sub(
-                r'Episode\s*\d+\s*', '', clean_filename, flags=re.IGNORECASE
-            ).strip()
-
-            if not clean_filename:
-                clean_filename = "Unknown Telemetry"
-
-            # Inject new title format if it doesn't already end with the expected structure
-            existing_title = str(post.metadata.get('title', '')).lower()
-            if 'title' not in post.metadata or " of it all" not in existing_title:
-                concept = random.choice(FERAL_CONCEPTS)
-                post.metadata['title'] = f"Episode {ep_num}: {concept} and the {clean_filename} of it all"
-                needs_save = True
 
             # Inject or overwrite Season based on the physical folder architecture
             if 'season' not in post.metadata or post.metadata['season'] != season_num:
@@ -134,7 +98,7 @@ else:
             if needs_save:
                 with open(filepath, 'w', encoding='utf-8') as f:
                     f.write(frontmatter.dumps(post))
-                print(f"✅ Updated {filename} -> Injected Feral Title & SEO Metadata (S{season_num}E{ep_num}).")
+                print(f"✅ Updated {filename} -> Injected SEO Metadata (S{season_num}E{ep_num}).")
             else:
                 print(f"⏩ Skipped {filename} -> (Already fully tagged)")
         else:
