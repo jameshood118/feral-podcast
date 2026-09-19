@@ -27,7 +27,7 @@ summary: A transformative breakdown of how standard optimization forces humans i
   tactical deployment of Feral SEO to weaponize high-friction taxonomy, forcing the
   Beige World machines to adapt to Sovereign architecture rather than surrendering
   personal telemetry to the void.
-title: 'Episode 1: The Final Boss Phase and the Ep 01 The Feral Seo Manifesto of it
+title: 'Episode 1: The Final Boss Phase and The Feral Seo Manifesto of it
   all'
 transcript_url: ''
 ---

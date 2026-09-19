@@ -27,8 +27,8 @@ summary: A tactical deconstruction of algorithmic flatlining. We move beyond cre
   guilt and use Negative Space Debugging to expose the physical architecture of YouTube's
   recommendation engine, revealing how complex human reality is severed to maintain
   machine efficiency.
-title: 'Episode 2: The Aggro Range and the Ep 02 Negative Space Debugging The Youtube
-  Algorithm of it all'
+title: 'Episode 2: The Aggro Range and the Negative Space Debugging The Youtube
+  Algorithm'
 transcript_url: ''
 ---
 
