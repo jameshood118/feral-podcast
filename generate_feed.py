@@ -1,3 +1,4 @@
+
 """
 Feral Podcast RSS Generator (Multi-Show / Sovereign Braid)
 Show.yaml + Auto-README + Mutagen Telemetry + UTF-8 Hardened + Podcasting 2.0
@@ -105,7 +106,10 @@ def generate_rss_for_show(show_slug):
         needs_save = False
 
         # region 1. GUID INJECTION (YouTube-Compliant 3-Chunk GUID)
-        if 'guid' not in post.metadata:
+        current_guid = str(post.metadata.get('guid', '')).strip()
+        invalid_guids = ["[INSERT_UUID_HERE]", "", "None"]
+        
+        if current_guid in invalid_guids:
             new_guid = "-".join(str(uuid.uuid4()).split("-")[:3])
             post.metadata['guid'] = new_guid
             needs_save = True
@@ -113,43 +117,51 @@ def generate_rss_for_show(show_slug):
         # endregion
 
         # region 2. FERAL TELEMETRY (TINYTAG)
-        current_size = str(post.metadata.get('file_size', ''))
-        current_duration = str(post.metadata.get('duration', ''))
-        invalid_durations = ['[HH:MM:SS]', '[DURATION]', '00:00:00']
+        current_size = str(post.metadata.get('file_size', '')).strip()
+        current_duration = str(post.metadata.get('duration', '')).strip()
+        
+        invalid_sizes = ['[SIZE_IN_BYTES]', '', '0', 'None']
+        invalid_durations = ['[HH:MM:SS]', '[DURATION]', '00:00:00', '', 'None']
 
-        if current_size == '[SIZE_IN_BYTES]' or current_duration in invalid_durations \
-           or not current_size or not current_duration:
+        if current_size in invalid_sizes or current_duration in invalid_durations:
 
-            audio_url = post.metadata.get('audio_url', '')
-            audio_filename = urllib.parse.unquote(audio_url.split('/')[-1])
-            local_audio_path = os.path.join(LOCAL_AUDIO_DIR, audio_filename)
+            audio_url = str(post.metadata.get('audio_url', '')).strip()
+            
+            # Guard against the template placeholder being left in the audio_url
+            if not audio_url or "[ACTUAL_FILENAME" in audio_url:
+                print(f"[WARNING] Skipping telemetry for {filename}: audio_url is empty or contains a placeholder.")
+            else:
+                audio_filename = urllib.parse.unquote(audio_url.split('/')[-1])
+                local_audio_path = os.path.join(LOCAL_AUDIO_DIR, audio_filename)
 
-            if os.path.exists(local_audio_path):
-                # pylint: disable=broad-exception-caught
-                try:
-                    # Inject Byte Size
-                    size_bytes = os.path.getsize(local_audio_path)
-                    post.metadata['file_size'] = str(size_bytes)
+                if os.path.exists(local_audio_path):
+                    # pylint: disable=broad-exception-caught
+                    try:
+                        # Inject Byte Size
+                        size_bytes = os.path.getsize(local_audio_path)
+                        post.metadata['file_size'] = str(size_bytes)
 
-                    # Honey Badger Duration Extraction
-                    tag = TinyTag.get(local_audio_path)
-                    if tag.duration is not None and tag.duration > 0:
-                        duration_seconds = int(tag.duration)
-                        formatted_duration = str(timedelta(seconds=duration_seconds))
+                        # Honey Badger Duration Extraction
+                        tag = TinyTag.get(local_audio_path)
+                        if tag.duration is not None and tag.duration > 0:
+                            duration_seconds = int(tag.duration)
+                            formatted_duration = str(timedelta(seconds=duration_seconds))
 
-                        if len(formatted_duration.split(':')) == 2:
-                            formatted_duration = f"00:{formatted_duration}"
-                        elif len(formatted_duration) == 7:
-                            formatted_duration = f"0{formatted_duration}"
+                            if len(formatted_duration.split(':')) == 2:
+                                formatted_duration = f"00:{formatted_duration}"
+                            elif len(formatted_duration) == 7:
+                                formatted_duration = f"0{formatted_duration}"
 
-                        post.metadata['duration'] = formatted_duration
-                        needs_save = True
-                        print(f"[{show_title}] Injected Size ({size_bytes}) "
-                              f"& Duration ({formatted_duration}) into {filename}")
-                    else:
-                        print(f"[WARNING] TinyTag could not calculate duration for {audio_filename}")
-                except Exception as e:
-                    print(f"[WARNING] TinyTag failed to parse {audio_filename}: {e}")
+                            post.metadata['duration'] = formatted_duration
+                            needs_save = True
+                            print(f"[{show_title}] Injected Size ({size_bytes}) "
+                                  f"& Duration ({formatted_duration}) into {filename}")
+                        else:
+                            print(f"[WARNING] TinyTag could not calculate duration for {audio_filename}")
+                    except Exception as e:
+                        print(f"[WARNING] TinyTag failed to parse {audio_filename}: {e}")
+                else:
+                    print(f"[WARNING] Local audio file not found for telemetry check: {local_audio_path}")
         # endregion
 
         if needs_save:
@@ -157,8 +169,12 @@ def generate_rss_for_show(show_slug):
                 f.write(frontmatter.dumps(post))
 
         # Parse the date so we can sort mathematically
-        pub_date = datetime.strptime(post.metadata['date'], "%Y-%m-%dT%H:%M:%SZ")
-        pub_date = pub_date.replace(tzinfo=pytz.UTC)
+        try:
+            pub_date = datetime.strptime(post.metadata['date'], "%Y-%m-%dT%H:%M:%SZ")
+            pub_date = pub_date.replace(tzinfo=pytz.UTC)
+        except (ValueError, KeyError) as e:
+            print(f"[ERROR] Could not parse date for {filename}. Skipping. Error: {e}")
+            continue
 
         # Store in memory
         parsed_episodes.append({
@@ -173,8 +189,9 @@ def generate_rss_for_show(show_slug):
     for ep in parsed_episodes:
         post = ep['post']
         fe = fg.add_entry()
-        fe.id(post.metadata['guid'])
-        fe.title(post.metadata['title'])
+        
+        fe.id(str(post.metadata.get('guid', '')))
+        fe.title(str(post.metadata.get('title', 'Untitled')))
 
         # region 3. THE TRANSLATION LAYER
         # Convert raw Markdown content into clean HTML for the RSS feed
@@ -188,10 +205,18 @@ def generate_rss_for_show(show_slug):
         # endregion
 
         fe.pubDate(ep['pub_date'])
-        fe.enclosure(post.metadata['audio_url'],
-                     str(post.metadata.get('file_size', '0')),
-                     'audio/x-m4a')
-        fe.podcast.itunes_duration(post.metadata.get('duration', '00:00:00'))
+        
+        audio_url = str(post.metadata.get('audio_url', ''))
+        file_size = str(post.metadata.get('file_size', '0'))
+        if "[SIZE_IN_BYTES]" in file_size or file_size == "None":
+            file_size = "0"
+            
+        fe.enclosure(audio_url, file_size, 'audio/x-m4a')
+        
+        duration = str(post.metadata.get('duration', '00:00:00'))
+        if "[HH:MM:SS]" in duration or "[DURATION]" in duration or duration == "None":
+            duration = "00:00:00"
+        fe.podcast.itunes_duration(duration)
 
         if 'season' in post.metadata:
             fe.podcast.itunes_season(int(post.metadata['season']))
@@ -200,7 +225,7 @@ def generate_rss_for_show(show_slug):
         if post.metadata.get('episode_type'):
             fe.podcast.itunes_episode_type(str(post.metadata['episode_type']).lower())
 
-        if post.metadata.get('explicit'):
+        if post.metadata.get('explicit') is not None:
             explicit_val = str(post.metadata['explicit']).lower()
             fe.podcast.itunes_explicit("yes" if explicit_val in ["true", "yes", "y", "1"] else "no")
 
@@ -213,8 +238,8 @@ def generate_rss_for_show(show_slug):
         if post.metadata.get('summary'):
             fe.podcast.itunes_summary(post.metadata['summary'])
 
-        transcript_url = post.metadata.get('transcript_url')
-        if transcript_url and transcript_url != '':
+        transcript_url = str(post.metadata.get('transcript_url', '')).strip()
+        if transcript_url and "[ACTUAL_FILENAME" not in transcript_url and transcript_url != 'None':
             # Utilizing feedgen's native link tag mapping as the alternate transcript container
             fe.link(href=transcript_url, rel="alternate", type="text/vtt", title="Transcript")
 
