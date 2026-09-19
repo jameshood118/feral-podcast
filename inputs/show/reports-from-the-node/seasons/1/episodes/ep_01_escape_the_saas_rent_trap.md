@@ -11,7 +11,7 @@ image: ''
 season: 1
 seo_description: ''
 subtitle: ''
-title: 'Episode 1: The Cranky Neighbor and the Ep 01 Escape The Saas Rent Trap of
+title: 'Episode 1: The Cranky Neighbor and the Escape The Saas Rent Trap of
   it all'
 transcript_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/transcripts/Escape_the_SaaS_rent_trap.vtt
 ---
