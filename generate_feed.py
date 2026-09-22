@@ -1,4 +1,3 @@
-
 """
 Feral Podcast RSS Generator (Multi-Show / Sovereign Braid)
 Show.yaml + Auto-README + Mutagen Telemetry + UTF-8 Hardened + Podcasting 2.0
@@ -176,14 +175,28 @@ def generate_rss_for_show(show_slug):
             print(f"[ERROR] Could not parse date for {filename}. Skipping. Error: {e}")
             continue
 
+        # Industrial Solder: Cast Season and Episode as strict integers to defeat string-sorting
+        try:
+            season_num = int(post.metadata.get('season', 0))
+        except (ValueError, TypeError):
+            season_num = 0
+
+        try:
+            episode_num = int(post.metadata.get('episode_number', 0))
+        except (ValueError, TypeError):
+            episode_num = 0
+
         # Store in memory
         parsed_episodes.append({
             'post': post,
-            'pub_date': pub_date
+            'pub_date': pub_date,
+            'season': season_num,
+            'episode': episode_num
         })
 
-    # FERAL ALIGNMENT: Sort descending by date (Newest episodes at the top)
-    parsed_episodes.sort(key=lambda x: x['pub_date'], reverse=True)
+    # FERAL ALIGNMENT: Sort descending by Season, then Episode, then Date. 
+    # This prevents the Windows-style string sorting trap.
+    parsed_episodes.sort(key=lambda x: (x['season'], x['episode'], x['pub_date']), reverse=True)
 
     # Build the final XML strictly in the sorted order
     for ep in parsed_episodes:
