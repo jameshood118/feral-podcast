@@ -58,16 +58,13 @@ Scan the node or click the link to initiate the deployment protocol.
 ## Podcast Feeds
 
 <!-- FEEDS-START -->
-- **James Hood**
-  https://jameshood118.github.io/feral-podcast/outputs/show/james-hood/rss.xml
+- **Session Zero**
+  https://jameshood118.github.io/feral-podcast/outputs/show/session-zero/rss.xml
 
 - **James Hood**
   https://jameshood118.github.io/feral-podcast/outputs/show/james-hood/rss.xml
 
 - **Reports from the Node**
   https://jameshood118.github.io/feral-podcast/outputs/show/reports-from-the-node/rss.xml
-
-- **Session Zero**
-  https://jameshood118.github.io/feral-podcast/outputs/show/session-zero/rss.xml
 
 <!-- FEEDS-END -->
