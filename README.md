@@ -61,6 +61,9 @@ Scan the node or click the link to initiate the deployment protocol.
 - **James Hood**
   https://jameshood118.github.io/feral-podcast/outputs/show/james-hood/rss.xml
 
+- **James Hood**
+  https://jameshood118.github.io/feral-podcast/outputs/show/james-hood/rss.xml
+
 - **Reports from the Node**
   https://jameshood118.github.io/feral-podcast/outputs/show/reports-from-the-node/rss.xml
 
