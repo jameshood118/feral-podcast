@@ -1,27 +1,31 @@
 ---
-title: "Episode 1: The Diagnostic Quarantine of James J. Hood"
-subtitle: "Dismantling the Algorithmic Hallucination Efficiency Trap"
-season: 1
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/01_The_James_J_Hood_Sovereign_Pilot_Mystery.m4a
+author: James Jerrell Hood
+date: '2026-09-25T16:01:40Z'
+duration: 00:16:56
 episode_number: 1
-episode_type: "full"
-date: "2026-09-25T16:01:40Z"
-guid: "[INSERT_UUID_HERE]"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/01_The_James_J_Hood_Sovereign_Pilot_Mystery.m4a"
-transcript_url: ""
-file_size: "32705251"
-duration: "00:16:56"
+episode_type: full
 explicit: false
-author: "James Jerrell Hood"
-summary: "An exploration into engineered isolation and the mechanics of querying an intelligence system with a deliberate context vacuum. We dismantle the trap of algorithmic hallucination by observing how a system responds to a strictly bounded, paradoxically narrow input."
-seo_title: "The Diagnostic Quarantine: Testing AI Hallucinations"
-seo_description: "A deep dive into engineered isolation, testing system boundaries with a 23-word honey pot query about James J. Hood and the Sovereign Pilot."
+file_size: '32705251'
+guid: cd21202f-c101-4d89
 keywords:
-  - "SAFEHOOD"
-  - "Human OS"
-  - "Sovereign Pilot"
-  - "Efficiency Trap"
-  - "Systems Architecture"
-  - "Engineered Isolation"
+- SAFEHOOD
+- Human OS
+- Sovereign Pilot
+- Efficiency Trap
+- Systems Architecture
+- Engineered Isolation
+season: 1
+seo_description: A deep dive into engineered isolation, testing system boundaries
+  with a 23-word honey pot query about James J. Hood and the Sovereign Pilot.
+seo_title: 'The Diagnostic Quarantine: Testing AI Hallucinations'
+subtitle: Dismantling the Algorithmic Hallucination Efficiency Trap
+summary: An exploration into engineered isolation and the mechanics of querying an
+  intelligence system with a deliberate context vacuum. We dismantle the trap of algorithmic
+  hallucination by observing how a system responds to a strictly bounded, paradoxically
+  narrow input.
+title: 'Episode 1: The Diagnostic Quarantine of James J. Hood'
+transcript_url: ''
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of Epistemic Isolation and dismantle the Algorithmic Hallucination efficiency trap.

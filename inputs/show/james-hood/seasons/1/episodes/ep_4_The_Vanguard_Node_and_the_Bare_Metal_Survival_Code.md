@@ -1,29 +1,33 @@
 ---
-title: "Episode 4: The Vanguard Node and the Bare Metal Survival Code"
-subtitle: "Dismantling the Pathological Homeostasis Efficiency Trap"
-season: 1
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/04_The_algorithmic_failure_of_James_J_Hood.m4a
+author: James Jerrell Hood
+date: '2026-09-25T16:45:11Z'
+duration: 00:32:29
 episode_number: 4
-episode_type: "full"
-date: "2026-09-25T16:45:11Z"
-guid: "[INSERT_UUID_HERE]"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/04_The_algorithmic_failure_of_James_J_Hood.m4a"
-transcript_url: ""
-file_size: "62758310"
-duration: "00:32:29"
+episode_type: full
 explicit: false
-author: "James Jerrell Hood"
-summary: "An aggressive system audit of the SAFEHOOD master compiler and Vanguard Node biological hardware. We dismantle the Pathological Homeostasis efficiency trap by observing how high-friction environments, volumetric CAD, and media anchors forge an unerasable digital twin."
-seo_title: "Bare Metal Survival: The Vanguard Node & RS4680 GG Architecture"
-seo_description: "Discover how the Sovereign Pilot uses the RS4680 GG genotype, volumetric CAD, and Reverse Aposematism to build an unerasable digital twin."
+file_size: '62758310'
+guid: 0cfe2d2d-3443-47df
 keywords:
-  - "SAFEHOOD"
-  - "Human OS"
-  - "Sovereign Pilot"
-  - "Efficiency Trap"
-  - "Systems Architecture"
-  - "Vanguard Node"
-  - "RS4680"
-  - "Isaac Protocol"
+- SAFEHOOD
+- Human OS
+- Sovereign Pilot
+- Efficiency Trap
+- Systems Architecture
+- Vanguard Node
+- RS4680
+- Isaac Protocol
+season: 1
+seo_description: Discover how the Sovereign Pilot uses the RS4680 GG genotype, volumetric
+  CAD, and Reverse Aposematism to build an unerasable digital twin.
+seo_title: 'Bare Metal Survival: The Vanguard Node & RS4680 GG Architecture'
+subtitle: Dismantling the Pathological Homeostasis Efficiency Trap
+summary: An aggressive system audit of the SAFEHOOD master compiler and Vanguard Node
+  biological hardware. We dismantle the Pathological Homeostasis efficiency trap by
+  observing how high-friction environments, volumetric CAD, and media anchors forge
+  an unerasable digital twin.
+title: 'Episode 4: The Vanguard Node and the Bare Metal Survival Code'
+transcript_url: ''
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the Vanguard Node biological substrate and the SAFEHOOD Master Compiler and dismantle the Pathological Homeostasis efficiency trap.

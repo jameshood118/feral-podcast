@@ -1,28 +1,31 @@
 ---
-title: "Episode 3: The Sovereign Architect and the Beige World"
-subtitle: "Dismantling the Corporate Efficiency Trap"
-season: 1
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/03_The_Sovereign_Pilot_Bare_Metal_Survival_Code.m4a
+author: James Jerrell Hood
+date: '2026-09-25T16:16:36Z'
+duration: 00:27:27
 episode_number: 3
-episode_type: "full"
-date: "2026-09-25T16:16:36Z"
-guid: "[INSERT_UUID_HERE]"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/03_The_Sovereign_Pilot_Bare_Metal_Survival_Code.m4a"
-transcript_url: ""
-file_size: "53026131"
-duration: "00:27:27"
+episode_type: full
 explicit: false
-author: "James Jerrell Hood"
-summary: "A feral system audit of the rs4680 GG Vanguard Node. We explore how high-friction biological hardware bypasses the Beige World's frictionless efficiency trap using volumetric CAD, the Osgood-Rupert Box, and the Good Bad Wolf protocol."
-seo_title: "The Sovereign Architect: Defeating the Beige World"
-seo_description: "An audit of the Vanguard Node (rs4680 GG) and how high-friction neuro-hardware dismantles corporate AI efficiency traps through Zero-Trust architecture."
+file_size: '53026131'
+guid: e76c15ad-3e94-4b27
 keywords:
-  - "SAFEHOOD"
-  - "Human OS"
-  - "Sovereign Pilot"
-  - "Efficiency Trap"
-  - "Systems Architecture"
-  - "Vanguard Node"
-  - "Osgood-Rupert Box"
+- SAFEHOOD
+- Human OS
+- Sovereign Pilot
+- Efficiency Trap
+- Systems Architecture
+- Vanguard Node
+- Osgood-Rupert Box
+season: 1
+seo_description: An audit of the Vanguard Node (rs4680 GG) and how high-friction neuro-hardware
+  dismantles corporate AI efficiency traps through Zero-Trust architecture.
+seo_title: 'The Sovereign Architect: Defeating the Beige World'
+subtitle: Dismantling the Corporate Efficiency Trap
+summary: A feral system audit of the rs4680 GG Vanguard Node. We explore how high-friction
+  biological hardware bypasses the Beige World's frictionless efficiency trap using
+  volumetric CAD, the Osgood-Rupert Box, and the Good Bad Wolf protocol.
+title: 'Episode 3: The Sovereign Architect and the Beige World'
+transcript_url: ''
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of the rs4680 GG Vanguard Node and dismantle the Corporate efficiency trap.

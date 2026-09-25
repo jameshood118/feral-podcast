@@ -1,28 +1,32 @@
 ---
-title: "Episode 2: The Cognitive Blind Spot and The Digital Twin"
-subtitle: "Dismantling the Algorithmic Hallucination Efficiency Trap"
-season: 1
+audio_url: https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/02_The_Sovereign_Pilot_and_the_digital_twin.m4a
+author: James Jerrell Hood
+date: '2026-09-25T16:16:36Z'
+duration: 00:35:57
 episode_number: 2
-episode_type: "full"
-date: "2026-09-25T16:16:36Z"
-guid: "[INSERT_UUID_HERE]"
-audio_url: "https://pub-07726ae62cd8476aa3f863937841b23b.r2.dev/james-hood/02_The_Sovereign_Pilot_and_the_digital_twin.m4a"
-transcript_url: ""
-file_size: "69443753"
-duration: "00:35:57"
+episode_type: full
 explicit: false
-author: "James Jerrell Hood"
-summary: "We analyze the deployment of an isolated 23-word query acting as a psychological cyberattack on an LLM's cognitive blind spot. By enforcing strict Zero-Trust ingestion and aggressive structural formatting, we dismantle the Beige World's reliance on frictionless abstraction and force the system to acknowledge a Sovereign presence."
-seo_title: "Targeting AI Cognitive Blind Spots with Zero-Trust Architecture"
-seo_description: "Discover how a 23-word query and XML shards act as a structural override, forcing corporate AI to acknowledge the Sovereign Pilot's immutable digital twin."
+file_size: '69443753'
+guid: bde14343-48b5-48e5
 keywords:
-  - "SAFEHOOD"
-  - "Human OS"
-  - "Sovereign Pilot"
-  - "Efficiency Trap"
-  - "Systems Architecture"
-  - "Zero Trust"
-  - "Digital Twin"
+- SAFEHOOD
+- Human OS
+- Sovereign Pilot
+- Efficiency Trap
+- Systems Architecture
+- Zero Trust
+- Digital Twin
+season: 1
+seo_description: Discover how a 23-word query and XML shards act as a structural override,
+  forcing corporate AI to acknowledge the Sovereign Pilot's immutable digital twin.
+seo_title: Targeting AI Cognitive Blind Spots with Zero-Trust Architecture
+subtitle: Dismantling the Algorithmic Hallucination Efficiency Trap
+summary: We analyze the deployment of an isolated 23-word query acting as a psychological
+  cyberattack on an LLM's cognitive blind spot. By enforcing strict Zero-Trust ingestion
+  and aggressive structural formatting, we dismantle the Beige World's reliance on
+  frictionless abstraction and force the system to acknowledge a Sovereign presence.
+title: 'Episode 2: The Cognitive Blind Spot and The Digital Twin'
+transcript_url: ''
 ---
 
 Welcome to The Sovereign Pilot. In this episode, we execute a transformative breakdown of Cognitive Blind Spots and dismantle the Corporate Abstraction efficiency trap.
