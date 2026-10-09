@@ -1,2 +1,3 @@
 # Ignore local audio telemetry staging
 audio_staging/
+.tmp.*
